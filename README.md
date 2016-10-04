@@ -7,7 +7,9 @@ Document root: /webroot
 # Build project
 
 cd /MisionServer
+
 swift build
+
 .build/debug/MisionServer
 
 # Generate .xcodeproj
