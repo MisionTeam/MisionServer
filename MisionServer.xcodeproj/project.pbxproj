@@ -17,7 +17,7 @@
             productRefGroup = ____Products_;
             projectDirPath = '';
             projectRoot = '';
-            targets = (______Target_PerfectLib, ______Target_COpenSSL, ______Target_PerfectThread, ______Target_PerfectNet, ______Target_PerfectHTTP, ______Target_CHTTPParser, ______Target_PerfectHTTPServer, ______Target_MistionServer);
+            targets = (______Target_PerfectLib, ______Target_COpenSSL, ______Target_PerfectThread, ______Target_PerfectNet, ______Target_PerfectHTTP, ______Target_CHTTPParser, ______Target_PerfectHTTPServer, ______Target_MisionServer);
         };
         '__PBXFileRef_Package.swift' = {
             isa = PBXFileReference;
@@ -179,12 +179,12 @@
         };
         ___DebugConf_PerfectLib = {
             isa = XCBuildConfiguration;
-            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MistionServer.xcodeproj/PerfectLib_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectLib'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MisionServer.xcodeproj/PerfectLib_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectLib'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Debug;
         };
         _ReleaseConf_PerfectLib = {
             isa = XCBuildConfiguration;
-            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MistionServer.xcodeproj/PerfectLib_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectLib'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MisionServer.xcodeproj/PerfectLib_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectLib'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Release;
         };
         __Dependency_PerfectLib = {
@@ -7053,12 +7053,12 @@
         };
         ___DebugConf_COpenSSL = {
             isa = XCBuildConfiguration;
-            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; DEFINES_MODULE = 'YES'; SWIFT_VERSION = '3.0'; MODULEMAP_FILE = 'Packages/COpenSSL-2.0.1/COpenSSL/include/module.modulemap'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; INFOPLIST_FILE = 'MistionServer.xcodeproj/COpenSSL_Info.plist'; PRODUCT_BUNDLE_IDENTIFIER = 'COpenSSL'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; DEFINES_MODULE = 'YES'; SWIFT_VERSION = '3.0'; MODULEMAP_FILE = 'Packages/COpenSSL-2.0.1/COpenSSL/include/module.modulemap'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; INFOPLIST_FILE = 'MisionServer.xcodeproj/COpenSSL_Info.plist'; PRODUCT_BUNDLE_IDENTIFIER = 'COpenSSL'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Debug;
         };
         _ReleaseConf_COpenSSL = {
             isa = XCBuildConfiguration;
-            buildSettings = { SWIFT_VERSION = '3.0'; MODULEMAP_FILE = 'Packages/COpenSSL-2.0.1/COpenSSL/include/module.modulemap'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MistionServer.xcodeproj/COpenSSL_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; DEFINES_MODULE = 'YES'; PRODUCT_BUNDLE_IDENTIFIER = 'COpenSSL'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            buildSettings = { SWIFT_VERSION = '3.0'; MODULEMAP_FILE = 'Packages/COpenSSL-2.0.1/COpenSSL/include/module.modulemap'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MisionServer.xcodeproj/COpenSSL_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; DEFINES_MODULE = 'YES'; PRODUCT_BUNDLE_IDENTIFIER = 'COpenSSL'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Release;
         };
         __Dependency_COpenSSL = {
@@ -7127,12 +7127,12 @@
         };
         ___DebugConf_PerfectThread = {
             isa = XCBuildConfiguration;
-            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MistionServer.xcodeproj/PerfectThread_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectThread'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MisionServer.xcodeproj/PerfectThread_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectThread'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Debug;
         };
         _ReleaseConf_PerfectThread = {
             isa = XCBuildConfiguration;
-            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MistionServer.xcodeproj/PerfectThread_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectThread'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MisionServer.xcodeproj/PerfectThread_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectThread'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Release;
         };
         __Dependency_PerfectThread = {
@@ -7239,12 +7239,12 @@
         };
         ___DebugConf_PerfectNet = {
             isa = XCBuildConfiguration;
-            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MistionServer.xcodeproj/PerfectNet_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; HEADER_SEARCH_PATHS = '/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectNet'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MisionServer.xcodeproj/PerfectNet_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; HEADER_SEARCH_PATHS = '/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectNet'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Debug;
         };
         _ReleaseConf_PerfectNet = {
             isa = XCBuildConfiguration;
-            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MistionServer.xcodeproj/PerfectNet_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectNet'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MisionServer.xcodeproj/PerfectNet_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectNet'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Release;
         };
         __Dependency_PerfectNet = {
@@ -7399,12 +7399,12 @@
         };
         ___DebugConf_PerfectHTTP = {
             isa = XCBuildConfiguration;
-            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MistionServer.xcodeproj/PerfectHTTP_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; HEADER_SEARCH_PATHS = '/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectHTTP'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MisionServer.xcodeproj/PerfectHTTP_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; HEADER_SEARCH_PATHS = '/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectHTTP'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Debug;
         };
         _ReleaseConf_PerfectHTTP = {
             isa = XCBuildConfiguration;
-            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MistionServer.xcodeproj/PerfectHTTP_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectHTTP'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MisionServer.xcodeproj/PerfectHTTP_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectHTTP'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Release;
         };
         __Dependency_PerfectHTTP = {
@@ -7483,12 +7483,12 @@
         };
         ___DebugConf_CHTTPParser = {
             isa = XCBuildConfiguration;
-            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; HEADER_SEARCH_PATHS = '/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include'; DEFINES_MODULE = 'YES'; SWIFT_VERSION = '3.0'; MODULEMAP_FILE = 'MistionServer.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; INFOPLIST_FILE = 'MistionServer.xcodeproj/CHTTPParser_Info.plist'; PRODUCT_BUNDLE_IDENTIFIER = 'CHTTPParser'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; HEADER_SEARCH_PATHS = '/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include'; DEFINES_MODULE = 'YES'; SWIFT_VERSION = '3.0'; MODULEMAP_FILE = 'MisionServer.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; INFOPLIST_FILE = 'MisionServer.xcodeproj/CHTTPParser_Info.plist'; PRODUCT_BUNDLE_IDENTIFIER = 'CHTTPParser'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Debug;
         };
         _ReleaseConf_CHTTPParser = {
             isa = XCBuildConfiguration;
-            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; HEADER_SEARCH_PATHS = '/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include'; DEFINES_MODULE = 'YES'; SWIFT_VERSION = '3.0'; MODULEMAP_FILE = 'MistionServer.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; INFOPLIST_FILE = 'MistionServer.xcodeproj/CHTTPParser_Info.plist'; PRODUCT_BUNDLE_IDENTIFIER = 'CHTTPParser'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; HEADER_SEARCH_PATHS = '/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include'; DEFINES_MODULE = 'YES'; SWIFT_VERSION = '3.0'; MODULEMAP_FILE = 'MisionServer.xcodeproj/GeneratedModuleMap/CHTTPParser/module.modulemap'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; INFOPLIST_FILE = 'MisionServer.xcodeproj/CHTTPParser_Info.plist'; PRODUCT_BUNDLE_IDENTIFIER = 'CHTTPParser'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Release;
         };
         __Dependency_CHTTPParser = {
@@ -7611,21 +7611,21 @@
         };
         ___DebugConf_PerfectHTTPServer = {
             isa = XCBuildConfiguration;
-            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MistionServer.xcodeproj/PerfectHTTPServer_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; HEADER_SEARCH_PATHS = '/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include /Users/Theo/Documents/Development/Server/MisionServer/Packages/PerfectHTTPServer-2.0.0/Sources/CHTTPParser/include'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectHTTPServer'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MisionServer.xcodeproj/PerfectHTTPServer_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; HEADER_SEARCH_PATHS = '/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include /Users/Theo/Documents/Development/Server/MisionServer/Packages/PerfectHTTPServer-2.0.0/Sources/CHTTPParser/include'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectHTTPServer'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Debug;
         };
         _ReleaseConf_PerfectHTTPServer = {
             isa = XCBuildConfiguration;
-            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MistionServer.xcodeproj/PerfectHTTPServer_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include /Users/Theo/Documents/Development/Server/MisionServer/Packages/PerfectHTTPServer-2.0.0/Sources/CHTTPParser/include'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectHTTPServer'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
+            buildSettings = { SWIFT_VERSION = '3.0'; LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'MisionServer.xcodeproj/PerfectHTTPServer_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include /Users/Theo/Documents/Development/Server/MisionServer/Packages/PerfectHTTPServer-2.0.0/Sources/CHTTPParser/include'; PRODUCT_BUNDLE_IDENTIFIER = 'PerfectHTTPServer'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; OTHER_LDFLAGS = '$(inherited)'; };
             name = Release;
         };
         __Dependency_PerfectHTTPServer = {
             isa = PBXTargetDependency;
             target = ______Target_PerfectHTTPServer;
         };
-        _______Group_MistionServer = {
+        _______Group_MisionServer = {
             isa = PBXGroup;
-            name = 'MistionServer';
+            name = 'MisionServer';
             path = 'Sources';
             sourceTree = '<group>';
             children = ('__PBXFileRef_Sources/arguments.swift', '__PBXFileRef_Sources/main.swift');
@@ -7642,24 +7642,24 @@
             path = 'main.swift';
             sourceTree = '<group>';
         };
-        ______Target_MistionServer = {
+        ______Target_MisionServer = {
             isa = PBXNativeTarget;
-            buildConfigurationList = _______Confs_MistionServer;
-            buildPhases = (CompilePhase_MistionServer, ___LinkPhase_MistionServer);
+            buildConfigurationList = _______Confs_MisionServer;
+            buildPhases = (CompilePhase_MisionServer, ___LinkPhase_MisionServer);
             buildRules = ();
             dependencies = (__Dependency_PerfectLib, __Dependency_COpenSSL, __Dependency_PerfectThread, __Dependency_PerfectNet, __Dependency_PerfectHTTP, __Dependency_CHTTPParser, __Dependency_PerfectHTTPServer);
-            name = 'MistionServer';
-            productName = MistionServer;
-            productReference = _____Product_MistionServer;
+            name = 'MisionServer';
+            productName = MisionServer;
+            productReference = _____Product_MisionServer;
             productType = 'com.apple.product-type.tool';
         };
-        _____Product_MistionServer = {
+        _____Product_MisionServer = {
             isa = PBXFileReference;
             explicitFileType = 'compiled.mach-o.executable';
-            path = 'MistionServer';
+            path = 'MisionServer';
             sourceTree = BUILT_PRODUCTS_DIR;
         };
-        CompilePhase_MistionServer = {
+        CompilePhase_MisionServer = {
             isa = PBXSourcesBuildPhase;
             files = ('__src_cc_ref_Sources/arguments.swift', '__src_cc_ref_Sources/main.swift');
             runOnlyForDeploymentPostprocessing = 0;
@@ -7672,74 +7672,74 @@
             isa = PBXBuildFile;
             fileRef = '__PBXFileRef_Sources/main.swift';
         };
-        ___LinkPhase_MistionServer = {
+        ___LinkPhase_MisionServer = {
             isa = PBXFrameworksBuildPhase;
-            files = (_LinkFileRef_PerfectLib_via_MistionServer, _LinkFileRef_COpenSSL_via_MistionServer, _LinkFileRef_PerfectThread_via_MistionServer, _LinkFileRef_PerfectNet_via_MistionServer, _LinkFileRef_PerfectHTTP_via_MistionServer, _LinkFileRef_CHTTPParser_via_MistionServer, _LinkFileRef_PerfectHTTPServer_via_MistionServer);
+            files = (_LinkFileRef_PerfectLib_via_MisionServer, _LinkFileRef_COpenSSL_via_MisionServer, _LinkFileRef_PerfectThread_via_MisionServer, _LinkFileRef_PerfectNet_via_MisionServer, _LinkFileRef_PerfectHTTP_via_MisionServer, _LinkFileRef_CHTTPParser_via_MisionServer, _LinkFileRef_PerfectHTTPServer_via_MisionServer);
             runOnlyForDeploymentPostprocessing = 0;
         };
-        _LinkFileRef_PerfectLib_via_MistionServer = {
+        _LinkFileRef_PerfectLib_via_MisionServer = {
             isa = PBXBuildFile;
             fileRef = _____Product_PerfectLib;
         };
-        _LinkFileRef_COpenSSL_via_MistionServer = {
+        _LinkFileRef_COpenSSL_via_MisionServer = {
             isa = PBXBuildFile;
             fileRef = _____Product_COpenSSL;
         };
-        _LinkFileRef_PerfectThread_via_MistionServer = {
+        _LinkFileRef_PerfectThread_via_MisionServer = {
             isa = PBXBuildFile;
             fileRef = _____Product_PerfectThread;
         };
-        _LinkFileRef_PerfectNet_via_MistionServer = {
+        _LinkFileRef_PerfectNet_via_MisionServer = {
             isa = PBXBuildFile;
             fileRef = _____Product_PerfectNet;
         };
-        _LinkFileRef_PerfectHTTP_via_MistionServer = {
+        _LinkFileRef_PerfectHTTP_via_MisionServer = {
             isa = PBXBuildFile;
             fileRef = _____Product_PerfectHTTP;
         };
-        _LinkFileRef_CHTTPParser_via_MistionServer = {
+        _LinkFileRef_CHTTPParser_via_MisionServer = {
             isa = PBXBuildFile;
             fileRef = _____Product_CHTTPParser;
         };
-        _LinkFileRef_PerfectHTTPServer_via_MistionServer = {
+        _LinkFileRef_PerfectHTTPServer_via_MisionServer = {
             isa = PBXBuildFile;
             fileRef = _____Product_PerfectHTTPServer;
         };
-        _______Confs_MistionServer = {
+        _______Confs_MisionServer = {
             isa = XCConfigurationList;
-            buildConfigurations = (___DebugConf_MistionServer, _ReleaseConf_MistionServer);
+            buildConfigurations = (___DebugConf_MisionServer, _ReleaseConf_MisionServer);
             defaultConfigurationIsVisible = 0;
             defaultConfigurationName = Debug;
         };
-        ___DebugConf_MistionServer = {
+        ___DebugConf_MisionServer = {
             isa = XCBuildConfiguration;
             buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include /Users/Theo/Documents/Development/Server/MisionServer/Packages/PerfectHTTPServer-2.0.0/Sources/CHTTPParser/include'; OTHER_SWIFT_FLAGS = '$(inherited)'; SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
             name = Debug;
         };
-        _ReleaseConf_MistionServer = {
+        _ReleaseConf_MisionServer = {
             isa = XCBuildConfiguration;
             buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; HEADER_SEARCH_PATHS = '/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include /Users/Theo/Documents/Development/Server/MisionServer/Packages/PerfectHTTPServer-2.0.0/Sources/CHTTPParser/include'; OTHER_SWIFT_FLAGS = '$(inherited)'; SWIFT_FORCE_STATIC_LINK_STDLIB = 'NO'; SWIFT_FORCE_DYNAMIC_LINK_STDLIB = 'YES'; OTHER_LDFLAGS = '$(inherited)'; SWIFT_VERSION = '3.0'; };
             name = Release;
         };
-        __Dependency_MistionServer = {
+        __Dependency_MisionServer = {
             isa = PBXTargetDependency;
-            target = ______Target_MistionServer;
+            target = ______Target_MisionServer;
         };
-        '__PBXFileRef_MistionServer.xcodeproj/Configs/Project.xcconfig' = {
+        '__PBXFileRef_MisionServer.xcodeproj/Configs/Project.xcconfig' = {
             isa = PBXFileReference;
             lastKnownFileType = text.xcconfig;
-            path = 'MistionServer.xcodeproj/Configs/Project.xcconfig';
+            path = 'MisionServer.xcodeproj/Configs/Project.xcconfig';
             sourceTree = '<group>';
         };
         _____Configs_ = {
             isa = PBXGroup;
-            children = ('__PBXFileRef_MistionServer.xcodeproj/Configs/Project.xcconfig');
+            children = ('__PBXFileRef_MisionServer.xcodeproj/Configs/Project.xcconfig');
             name = Configs;
             sourceTree = '<group>';
         };
         _____Sources_ = {
             isa = PBXGroup;
-            children = (_______Group_PerfectLib, _______Group_COpenSSL, _______Group_PerfectThread, _______Group_PerfectNet, _______Group_PerfectHTTP, _______Group_CHTTPParser, _______Group_PerfectHTTPServer, _______Group_MistionServer);
+            children = (_______Group_PerfectLib, _______Group_COpenSSL, _______Group_PerfectThread, _______Group_PerfectNet, _______Group_PerfectHTTP, _______Group_CHTTPParser, _______Group_PerfectHTTPServer, _______Group_MisionServer);
             name = Sources;
             sourceTree = '<group>';
         };
@@ -7751,19 +7751,19 @@
         };
         ____Products_ = {
             isa = PBXGroup;
-            children = (_____Product_PerfectLib, _____Product_COpenSSL, _____Product_PerfectThread, _____Product_PerfectNet, _____Product_PerfectHTTP, _____Product_CHTTPParser, _____Product_PerfectHTTPServer, _____Product_MistionServer);
+            children = (_____Product_PerfectLib, _____Product_COpenSSL, _____Product_PerfectThread, _____Product_PerfectNet, _____Product_PerfectHTTP, _____Product_CHTTPParser, _____Product_PerfectHTTPServer, _____Product_MisionServer);
             name = Products;
             sourceTree = '<group>';
         };
         _______Debug_ = {
             isa = XCBuildConfiguration;
-            baseConfigurationReference = '__PBXFileRef_MistionServer.xcodeproj/Configs/Project.xcconfig';
+            baseConfigurationReference = '__PBXFileRef_MisionServer.xcodeproj/Configs/Project.xcconfig';
             buildSettings = {};
             name = Debug;
         };
         _____Release_ = {
             isa = XCBuildConfiguration;
-            baseConfigurationReference = '__PBXFileRef_MistionServer.xcodeproj/Configs/Project.xcconfig';
+            baseConfigurationReference = '__PBXFileRef_MisionServer.xcodeproj/Configs/Project.xcconfig';
             buildSettings = {};
             name = Release;
         };
