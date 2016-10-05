@@ -34,15 +34,8 @@ routes.add(method: .get, uri: "/", handler: {
 	}
 )
 
-routes.add(method: .get, uri: "/login") { (request, response) in
-    response.setHeader(.contentType, value: "application/json")
-    
-    let token = UUID().string
-    response.setBody(string: token)
-    
-    response.completed()
-}
-
+let authRoutes = AuthRouting().routes
+routes.add(routes: authRoutes)
 
 
 // Add the routes to the server.

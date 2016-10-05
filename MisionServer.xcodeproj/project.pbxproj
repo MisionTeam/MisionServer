@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E48F46C31DA498CD000FFF52 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F46C21DA498CD000FFF52 /* Authentication.swift */; };
+		E48F46C51DA4A07A000FFF52 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F46C41DA4A07A000FFF52 /* Endpoint.swift */; };
+		E48F46C71DA4A787000FFF52 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F46C61DA4A787000FFF52 /* ErrorResponse.swift */; };
+		E48F46C91DA4A90C000FFF52 /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F46C81DA4A90C000FFF52 /* ContentType.swift */; };
+		E48F46CD1DA4ADB5000FFF52 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F46CC1DA4ADB5000FFF52 /* Extension.swift */; };
 		_LinkFileRef_CHTTPParser_via_MisionServer /* CHTTPParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CHTTPParser" /* CHTTPParser.framework */; };
 		_LinkFileRef_CHTTPParser_via_PerfectHTTPServer /* CHTTPParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CHTTPParser" /* CHTTPParser.framework */; };
 		_LinkFileRef_COpenSSL_via_CHTTPParser /* COpenSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_COpenSSL" /* COpenSSL.framework */; };
@@ -802,6 +807,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E48F46C21DA498CD000FFF52 /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = Auth/Authentication.swift; sourceTree = "<group>"; };
+		E48F46C41DA4A07A000FFF52 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		E48F46C61DA4A787000FFF52 /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		E48F46C81DA4A90C000FFF52 /* ContentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
+		E48F46CC1DA4ADB5000FFF52 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		__PBXFileRef_MisionServer.xcodeproj/Configs/Project.xcconfig /* MisionServer.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MisionServer.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
 		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/COpenSSL-2.0.1/COpenSSL/a_bitstr.c" /* a_bitstr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = a_bitstr.c; sourceTree = "<group>"; };
@@ -1629,6 +1639,33 @@
 			name = Dependencies;
 			sourceTree = "<group>";
 		};
+		E48F46C11DA49884000FFF52 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E48F46C21DA498CD000FFF52 /* Authentication.swift */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
+		E48F46CA1DA4A970000FFF52 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E48F46C41DA4A07A000FFF52 /* Endpoint.swift */,
+				E48F46C81DA4A90C000FFF52 /* ContentType.swift */,
+				E48F46C61DA4A787000FFF52 /* ErrorResponse.swift */,
+				E48F46CC1DA4ADB5000FFF52 /* Extension.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		E48F46CB1DA4A98D000FFF52 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				E48F46C11DA49884000FFF52 /* Auth */,
+			);
+			name = Routes;
+			sourceTree = "<group>";
+		};
 		"___RootGroup_" = {
 			isa = PBXGroup;
 			children = (
@@ -2374,6 +2411,8 @@
 		"_______Group_MisionServer" /* MisionServer */ = {
 			isa = PBXGroup;
 			children = (
+				E48F46CA1DA4A970000FFF52 /* Shared */,
+				E48F46CB1DA4A98D000FFF52 /* Routes */,
 				__PBXFileRef_Sources/arguments.swift /* arguments.swift */,
 				__PBXFileRef_Sources/main.swift /* main.swift */,
 			);
@@ -3341,8 +3380,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				E48F46C71DA4A787000FFF52 /* ErrorResponse.swift in Sources */,
 				__src_cc_ref_Sources/arguments.swift /* arguments.swift in Sources */,
+				E48F46CD1DA4ADB5000FFF52 /* Extension.swift in Sources */,
 				__src_cc_ref_Sources/main.swift /* main.swift in Sources */,
+				E48F46C51DA4A07A000FFF52 /* Endpoint.swift in Sources */,
+				E48F46C31DA498CD000FFF52 /* Authentication.swift in Sources */,
+				E48F46C91DA4A90C000FFF52 /* ContentType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
