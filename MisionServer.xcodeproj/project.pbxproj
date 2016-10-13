@@ -7,34 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E48F46C31DA498CD000FFF52 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F46C21DA498CD000FFF52 /* Authentication.swift */; };
-		E48F46C51DA4A07A000FFF52 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F46C41DA4A07A000FFF52 /* Endpoint.swift */; };
-		E48F46C71DA4A787000FFF52 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F46C61DA4A787000FFF52 /* ErrorResponse.swift */; };
-		E48F46C91DA4A90C000FFF52 /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F46C81DA4A90C000FFF52 /* ContentType.swift */; };
-		E48F46CD1DA4ADB5000FFF52 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48F46CC1DA4ADB5000FFF52 /* Extension.swift */; };
 		_LinkFileRef_CHTTPParser_via_MisionServer /* CHTTPParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CHTTPParser" /* CHTTPParser.framework */; };
 		_LinkFileRef_CHTTPParser_via_PerfectHTTPServer /* CHTTPParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CHTTPParser" /* CHTTPParser.framework */; };
 		_LinkFileRef_COpenSSL_via_CHTTPParser /* COpenSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_COpenSSL" /* COpenSSL.framework */; };
 		_LinkFileRef_COpenSSL_via_MisionServer /* COpenSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_COpenSSL" /* COpenSSL.framework */; };
 		_LinkFileRef_COpenSSL_via_PerfectHTTP /* COpenSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_COpenSSL" /* COpenSSL.framework */; };
 		_LinkFileRef_COpenSSL_via_PerfectHTTPServer /* COpenSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_COpenSSL" /* COpenSSL.framework */; };
+		_LinkFileRef_COpenSSL_via_PerfectMustache /* COpenSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_COpenSSL" /* COpenSSL.framework */; };
 		_LinkFileRef_COpenSSL_via_PerfectNet /* COpenSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_COpenSSL" /* COpenSSL.framework */; };
+		_LinkFileRef_MongoDB_via_MisionServer /* MongoDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_MongoDB" /* MongoDB.framework */; };
 		_LinkFileRef_PerfectHTTPServer_via_MisionServer /* PerfectHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectHTTPServer" /* PerfectHTTPServer.framework */; };
 		_LinkFileRef_PerfectHTTP_via_CHTTPParser /* PerfectHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectHTTP" /* PerfectHTTP.framework */; };
 		_LinkFileRef_PerfectHTTP_via_MisionServer /* PerfectHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectHTTP" /* PerfectHTTP.framework */; };
 		_LinkFileRef_PerfectHTTP_via_PerfectHTTPServer /* PerfectHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectHTTP" /* PerfectHTTP.framework */; };
+		_LinkFileRef_PerfectHTTP_via_PerfectMustache /* PerfectHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectHTTP" /* PerfectHTTP.framework */; };
 		_LinkFileRef_PerfectLib_via_CHTTPParser /* PerfectLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectLib" /* PerfectLib.framework */; };
 		_LinkFileRef_PerfectLib_via_MisionServer /* PerfectLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectLib" /* PerfectLib.framework */; };
 		_LinkFileRef_PerfectLib_via_PerfectHTTP /* PerfectLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectLib" /* PerfectLib.framework */; };
 		_LinkFileRef_PerfectLib_via_PerfectHTTPServer /* PerfectLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectLib" /* PerfectLib.framework */; };
+		_LinkFileRef_PerfectLib_via_PerfectMustache /* PerfectLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectLib" /* PerfectLib.framework */; };
+		_LinkFileRef_PerfectMustache_via_MisionServer /* PerfectMustache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectMustache" /* PerfectMustache.framework */; };
 		_LinkFileRef_PerfectNet_via_CHTTPParser /* PerfectNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectNet" /* PerfectNet.framework */; };
 		_LinkFileRef_PerfectNet_via_MisionServer /* PerfectNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectNet" /* PerfectNet.framework */; };
 		_LinkFileRef_PerfectNet_via_PerfectHTTP /* PerfectNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectNet" /* PerfectNet.framework */; };
 		_LinkFileRef_PerfectNet_via_PerfectHTTPServer /* PerfectNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectNet" /* PerfectNet.framework */; };
+		_LinkFileRef_PerfectNet_via_PerfectMustache /* PerfectNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectNet" /* PerfectNet.framework */; };
 		_LinkFileRef_PerfectThread_via_CHTTPParser /* PerfectThread.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectThread" /* PerfectThread.framework */; };
 		_LinkFileRef_PerfectThread_via_MisionServer /* PerfectThread.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectThread" /* PerfectThread.framework */; };
 		_LinkFileRef_PerfectThread_via_PerfectHTTP /* PerfectThread.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectThread" /* PerfectThread.framework */; };
 		_LinkFileRef_PerfectThread_via_PerfectHTTPServer /* PerfectThread.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectThread" /* PerfectThread.framework */; };
+		_LinkFileRef_PerfectThread_via_PerfectMustache /* PerfectThread.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectThread" /* PerfectThread.framework */; };
 		_LinkFileRef_PerfectThread_via_PerfectNet /* PerfectThread.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_PerfectThread" /* PerfectThread.framework */; };
 		"__src_cc_ref_Packages/COpenSSL-2.0.1/COpenSSL/a_bitstr.c" /* a_bitstr.c in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/COpenSSL-2.0.1/COpenSSL/a_bitstr.c" /* a_bitstr.c */; };
 		"__src_cc_ref_Packages/COpenSSL-2.0.1/COpenSSL/a_bool.c" /* a_bool.c in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/COpenSSL-2.0.1/COpenSSL/a_bool.c" /* a_bool.c */; };
@@ -718,100 +720,122 @@
 		"__src_cc_ref_Packages/COpenSSL-2.0.1/COpenSSL/x_x509a.c" /* x_x509a.c in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/COpenSSL-2.0.1/COpenSSL/x_x509a.c" /* x_x509a.c */; };
 		"__src_cc_ref_Packages/COpenSSL-2.0.1/COpenSSL/xcbc_enc.c" /* xcbc_enc.c in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/COpenSSL-2.0.1/COpenSSL/xcbc_enc.c" /* xcbc_enc.c */; };
 		"__src_cc_ref_Packages/COpenSSL-2.0.1/COpenSSL/xts128.c" /* xts128.c in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/COpenSSL-2.0.1/COpenSSL/xts128.c" /* xts128.c */; };
-		"__src_cc_ref_Packages/PerfectHTTP-2.0.2/Sources/HTTPFilter.swift" /* HTTPFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/HTTPFilter.swift" /* HTTPFilter.swift */; };
-		"__src_cc_ref_Packages/PerfectHTTP-2.0.2/Sources/HTTPHeaders.swift" /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/HTTPHeaders.swift" /* HTTPHeaders.swift */; };
-		"__src_cc_ref_Packages/PerfectHTTP-2.0.2/Sources/HTTPMethod.swift" /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/HTTPMethod.swift" /* HTTPMethod.swift */; };
-		"__src_cc_ref_Packages/PerfectHTTP-2.0.2/Sources/HTTPRequest.swift" /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/HTTPRequest.swift" /* HTTPRequest.swift */; };
-		"__src_cc_ref_Packages/PerfectHTTP-2.0.2/Sources/HTTPResponse.swift" /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/HTTPResponse.swift" /* HTTPResponse.swift */; };
-		"__src_cc_ref_Packages/PerfectHTTP-2.0.2/Sources/MimeReader.swift" /* MimeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/MimeReader.swift" /* MimeReader.swift */; };
-		"__src_cc_ref_Packages/PerfectHTTP-2.0.2/Sources/MimeType.swift" /* MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/MimeType.swift" /* MimeType.swift */; };
-		"__src_cc_ref_Packages/PerfectHTTP-2.0.2/Sources/Routing.swift" /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/Routing.swift" /* Routing.swift */; };
-		"__src_cc_ref_Packages/PerfectHTTP-2.0.2/Sources/StaticFileHandler.swift" /* StaticFileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/StaticFileHandler.swift" /* StaticFileHandler.swift */; };
-		"__src_cc_ref_Packages/PerfectHTTPServer-2.0.0/Sources/CHTTPParser/http_parser.c" /* http_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTPServer-2.0.0/Sources/CHTTPParser/http_parser.c" /* http_parser.c */; };
-		"__src_cc_ref_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HPACK.swift" /* HPACK.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HPACK.swift" /* HPACK.swift */; };
-		"__src_cc_ref_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HTTP11Request.swift" /* HTTP11Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HTTP11Request.swift" /* HTTP11Request.swift */; };
-		"__src_cc_ref_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HTTP11Response.swift" /* HTTP11Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HTTP11Response.swift" /* HTTP11Response.swift */; };
-		"__src_cc_ref_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HTTP2.swift" /* HTTP2.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HTTP2.swift" /* HTTP2.swift */; };
-		"__src_cc_ref_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HTTPServer.swift" /* HTTPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HTTPServer.swift" /* HTTPServer.swift */; };
-		"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Bytes.swift" /* Bytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Bytes.swift" /* Bytes.swift */; };
-		"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Dir.swift" /* Dir.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Dir.swift" /* Dir.swift */; };
-		"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/File.swift" /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/File.swift" /* File.swift */; };
-		"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/JSONConvertible.swift" /* JSONConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/JSONConvertible.swift" /* JSONConvertible.swift */; };
-		"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Log.swift" /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Log.swift" /* Log.swift */; };
-		"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectError.swift" /* PerfectError.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectError.swift" /* PerfectError.swift */; };
-		"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectServer.swift" /* PerfectServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectServer.swift" /* PerfectServer.swift */; };
-		"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/SwiftCompatibility.swift" /* SwiftCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/SwiftCompatibility.swift" /* SwiftCompatibility.swift */; };
-		"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/SysProcess.swift" /* SysProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/SysProcess.swift" /* SysProcess.swift */; };
-		"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Utilities.swift" /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Utilities.swift" /* Utilities.swift */; };
-		"__src_cc_ref_Packages/PerfectNet-2.0.0/Sources/Net.swift" /* Net.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectNet-2.0.0/Sources/Net.swift" /* Net.swift */; };
-		"__src_cc_ref_Packages/PerfectNet-2.0.0/Sources/NetEvent.swift" /* NetEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectNet-2.0.0/Sources/NetEvent.swift" /* NetEvent.swift */; };
-		"__src_cc_ref_Packages/PerfectNet-2.0.0/Sources/NetNamedPipe.swift" /* NetNamedPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectNet-2.0.0/Sources/NetNamedPipe.swift" /* NetNamedPipe.swift */; };
-		"__src_cc_ref_Packages/PerfectNet-2.0.0/Sources/NetTCP.swift" /* NetTCP.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectNet-2.0.0/Sources/NetTCP.swift" /* NetTCP.swift */; };
-		"__src_cc_ref_Packages/PerfectNet-2.0.0/Sources/NetTCPSSL.swift" /* NetTCPSSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectNet-2.0.0/Sources/NetTCPSSL.swift" /* NetTCPSSL.swift */; };
-		"__src_cc_ref_Packages/PerfectThread-2.0.1/Sources/ThreadQueue.swift" /* ThreadQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectThread-2.0.1/Sources/ThreadQueue.swift" /* ThreadQueue.swift */; };
-		"__src_cc_ref_Packages/PerfectThread-2.0.1/Sources/Threading.swift" /* Threading.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectThread-2.0.1/Sources/Threading.swift" /* Threading.swift */; };
+		"__src_cc_ref_Packages/MongoDB-2.0.0/Sources/MongoDB/BSON.swift" /* BSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/MongoDB-2.0.0/Sources/MongoDB/BSON.swift" /* BSON.swift */; };
+		"__src_cc_ref_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoClient.swift" /* MongoClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoClient.swift" /* MongoClient.swift */; };
+		"__src_cc_ref_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoCollection.swift" /* MongoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoCollection.swift" /* MongoCollection.swift */; };
+		"__src_cc_ref_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoConnectionPool.swift" /* MongoConnectionPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoConnectionPool.swift" /* MongoConnectionPool.swift */; };
+		"__src_cc_ref_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoCursor.swift" /* MongoCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoCursor.swift" /* MongoCursor.swift */; };
+		"__src_cc_ref_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoDatabase.swift" /* MongoDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoDatabase.swift" /* MongoDatabase.swift */; };
+		"__src_cc_ref_Packages/PerfectHTTP-2.0.4/Sources/HTTPFilter.swift" /* HTTPFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/HTTPFilter.swift" /* HTTPFilter.swift */; };
+		"__src_cc_ref_Packages/PerfectHTTP-2.0.4/Sources/HTTPHeaders.swift" /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/HTTPHeaders.swift" /* HTTPHeaders.swift */; };
+		"__src_cc_ref_Packages/PerfectHTTP-2.0.4/Sources/HTTPMethod.swift" /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/HTTPMethod.swift" /* HTTPMethod.swift */; };
+		"__src_cc_ref_Packages/PerfectHTTP-2.0.4/Sources/HTTPRequest.swift" /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/HTTPRequest.swift" /* HTTPRequest.swift */; };
+		"__src_cc_ref_Packages/PerfectHTTP-2.0.4/Sources/HTTPResponse.swift" /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/HTTPResponse.swift" /* HTTPResponse.swift */; };
+		"__src_cc_ref_Packages/PerfectHTTP-2.0.4/Sources/MimeReader.swift" /* MimeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/MimeReader.swift" /* MimeReader.swift */; };
+		"__src_cc_ref_Packages/PerfectHTTP-2.0.4/Sources/MimeType.swift" /* MimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/MimeType.swift" /* MimeType.swift */; };
+		"__src_cc_ref_Packages/PerfectHTTP-2.0.4/Sources/Routing.swift" /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/Routing.swift" /* Routing.swift */; };
+		"__src_cc_ref_Packages/PerfectHTTP-2.0.4/Sources/StaticFileHandler.swift" /* StaticFileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/StaticFileHandler.swift" /* StaticFileHandler.swift */; };
+		"__src_cc_ref_Packages/PerfectHTTPServer-2.0.3/Sources/CHTTPParser/http_parser.c" /* http_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTPServer-2.0.3/Sources/CHTTPParser/http_parser.c" /* http_parser.c */; };
+		"__src_cc_ref_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HPACK.swift" /* HPACK.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HPACK.swift" /* HPACK.swift */; };
+		"__src_cc_ref_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HTTP11Request.swift" /* HTTP11Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HTTP11Request.swift" /* HTTP11Request.swift */; };
+		"__src_cc_ref_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HTTP11Response.swift" /* HTTP11Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HTTP11Response.swift" /* HTTP11Response.swift */; };
+		"__src_cc_ref_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HTTP2.swift" /* HTTP2.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HTTP2.swift" /* HTTP2.swift */; };
+		"__src_cc_ref_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HTTPServer.swift" /* HTTPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HTTPServer.swift" /* HTTPServer.swift */; };
+		"__src_cc_ref_Packages/PerfectLib-2.0.1/Sources/PerfectLib/Bytes.swift" /* Bytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/Bytes.swift" /* Bytes.swift */; };
+		"__src_cc_ref_Packages/PerfectLib-2.0.1/Sources/PerfectLib/Dir.swift" /* Dir.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/Dir.swift" /* Dir.swift */; };
+		"__src_cc_ref_Packages/PerfectLib-2.0.1/Sources/PerfectLib/File.swift" /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/File.swift" /* File.swift */; };
+		"__src_cc_ref_Packages/PerfectLib-2.0.1/Sources/PerfectLib/JSONConvertible.swift" /* JSONConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/JSONConvertible.swift" /* JSONConvertible.swift */; };
+		"__src_cc_ref_Packages/PerfectLib-2.0.1/Sources/PerfectLib/Log.swift" /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/Log.swift" /* Log.swift */; };
+		"__src_cc_ref_Packages/PerfectLib-2.0.1/Sources/PerfectLib/PerfectError.swift" /* PerfectError.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/PerfectError.swift" /* PerfectError.swift */; };
+		"__src_cc_ref_Packages/PerfectLib-2.0.1/Sources/PerfectLib/PerfectServer.swift" /* PerfectServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/PerfectServer.swift" /* PerfectServer.swift */; };
+		"__src_cc_ref_Packages/PerfectLib-2.0.1/Sources/PerfectLib/SwiftCompatibility.swift" /* SwiftCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/SwiftCompatibility.swift" /* SwiftCompatibility.swift */; };
+		"__src_cc_ref_Packages/PerfectLib-2.0.1/Sources/PerfectLib/SysProcess.swift" /* SysProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/SysProcess.swift" /* SysProcess.swift */; };
+		"__src_cc_ref_Packages/PerfectLib-2.0.1/Sources/PerfectLib/Utilities.swift" /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/Utilities.swift" /* Utilities.swift */; };
+		"__src_cc_ref_Packages/PerfectMustache-2.0.0/Sources/Mustache.swift" /* Mustache.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectMustache-2.0.0/Sources/Mustache.swift" /* Mustache.swift */; };
+		"__src_cc_ref_Packages/PerfectNet-2.0.1/Sources/Net.swift" /* Net.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectNet-2.0.1/Sources/Net.swift" /* Net.swift */; };
+		"__src_cc_ref_Packages/PerfectNet-2.0.1/Sources/NetEvent.swift" /* NetEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectNet-2.0.1/Sources/NetEvent.swift" /* NetEvent.swift */; };
+		"__src_cc_ref_Packages/PerfectNet-2.0.1/Sources/NetNamedPipe.swift" /* NetNamedPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectNet-2.0.1/Sources/NetNamedPipe.swift" /* NetNamedPipe.swift */; };
+		"__src_cc_ref_Packages/PerfectNet-2.0.1/Sources/NetTCP.swift" /* NetTCP.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectNet-2.0.1/Sources/NetTCP.swift" /* NetTCP.swift */; };
+		"__src_cc_ref_Packages/PerfectNet-2.0.1/Sources/NetTCPSSL.swift" /* NetTCPSSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectNet-2.0.1/Sources/NetTCPSSL.swift" /* NetTCPSSL.swift */; };
+		"__src_cc_ref_Packages/PerfectThread-2.0.2/Sources/ThreadQueue.swift" /* ThreadQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectThread-2.0.2/Sources/ThreadQueue.swift" /* ThreadQueue.swift */; };
+		"__src_cc_ref_Packages/PerfectThread-2.0.2/Sources/Threading.swift" /* Threading.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectThread-2.0.2/Sources/Threading.swift" /* Threading.swift */; };
+		__src_cc_ref_Sources/APIRouting.swift /* RoutingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/APIRouting.swift /* RoutingAPI.swift */; };
+		__src_cc_ref_Sources/AuthRouting.swift /* RoutingAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/AuthRouting.swift /* RoutingAuth.swift */; };
+		__src_cc_ref_Sources/ContentType.swift /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/ContentType.swift /* ContentType.swift */; };
+		__src_cc_ref_Sources/Endpoint.swift /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/Endpoint.swift /* Endpoint.swift */; };
+		__src_cc_ref_Sources/ErrorResponse.swift /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/ErrorResponse.swift /* ErrorResponse.swift */; };
+		"__src_cc_ref_Sources/HTTPResponse+MS.swift" /* HTTPResponse+MS.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Sources/HTTPResponse+MS.swift" /* HTTPResponse+MS.swift */; };
 		__src_cc_ref_Sources/arguments.swift /* arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/arguments.swift /* arguments.swift */; };
 		__src_cc_ref_Sources/main.swift /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/main.swift /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E43DABE61DA372B800100154 /* PBXContainerItemProxy */ = {
+		E4BF36711DAEDE2F003582FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_COpenSSL";
 			remoteInfo = COpenSSL;
 		};
-		E43DABE71DA372B800100154 /* PBXContainerItemProxy */ = {
+		E4BF36721DAEDE2F003582FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_PerfectThread";
 			remoteInfo = PerfectThread;
 		};
-		E43DABE81DA372B800100154 /* PBXContainerItemProxy */ = {
+		E4BF36731DAEDE2F003582FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_PerfectLib";
 			remoteInfo = PerfectLib;
 		};
-		E43DABE91DA372B800100154 /* PBXContainerItemProxy */ = {
+		E4BF36741DAEDE2F003582FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_PerfectNet";
 			remoteInfo = PerfectNet;
 		};
-		E43DABEA1DA372B800100154 /* PBXContainerItemProxy */ = {
+		E4BF36751DAEDE2F003582FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_PerfectHTTP";
 			remoteInfo = PerfectHTTP;
 		};
-		E43DABEB1DA372B800100154 /* PBXContainerItemProxy */ = {
+		E4BF36761DAEDE2F003582FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_CHTTPParser";
 			remoteInfo = CHTTPParser;
 		};
-		E43DABEC1DA372B800100154 /* PBXContainerItemProxy */ = {
+		E4BF36771DAEDE2F003582FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_PerfectHTTPServer";
 			remoteInfo = PerfectHTTPServer;
 		};
+		E4BF36781DAEDE2F003582FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_MongoDB";
+			remoteInfo = MongoDB;
+		};
+		E4BF36791DAEDE2F003582FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = __RootObject_ /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "______Target_PerfectMustache";
+			remoteInfo = PerfectMustache;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E48F46C21DA498CD000FFF52 /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Authentication.swift; path = Auth/Authentication.swift; sourceTree = "<group>"; };
-		E48F46C41DA4A07A000FFF52 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		E48F46C61DA4A787000FFF52 /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
-		E48F46C81DA4A90C000FFF52 /* ContentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
-		E48F46CC1DA4ADB5000FFF52 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		__PBXFileRef_MisionServer.xcodeproj/Configs/Project.xcconfig /* MisionServer.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MisionServer.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
 		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/COpenSSL-2.0.1/COpenSSL/a_bitstr.c" /* a_bitstr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = a_bitstr.c; sourceTree = "<group>"; };
@@ -1496,47 +1520,62 @@
 		"__PBXFileRef_Packages/COpenSSL-2.0.1/COpenSSL/x_x509a.c" /* x_x509a.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = x_x509a.c; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/COpenSSL-2.0.1/COpenSSL/xcbc_enc.c" /* xcbc_enc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xcbc_enc.c; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/COpenSSL-2.0.1/COpenSSL/xts128.c" /* xts128.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xts128.c; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/HTTPFilter.swift" /* HTTPFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPFilter.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/HTTPHeaders.swift" /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/HTTPMethod.swift" /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/HTTPRequest.swift" /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/HTTPResponse.swift" /* HTTPResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/MimeReader.swift" /* MimeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimeReader.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/MimeType.swift" /* MimeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimeType.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/Routing.swift" /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/StaticFileHandler.swift" /* StaticFileHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFileHandler.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectHTTPServer-2.0.0/Sources/CHTTPParser/http_parser.c" /* http_parser.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = http_parser.c; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HPACK.swift" /* HPACK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPACK.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HTTP11Request.swift" /* HTTP11Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP11Request.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HTTP11Response.swift" /* HTTP11Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP11Response.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HTTP2.swift" /* HTTP2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP2.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HTTPServer.swift" /* HTTPServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPServer.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Bytes.swift" /* Bytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bytes.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Dir.swift" /* Dir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dir.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/File.swift" /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/JSONConvertible.swift" /* JSONConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONConvertible.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Log.swift" /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectError.swift" /* PerfectError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectError.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectServer.swift" /* PerfectServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectServer.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/SwiftCompatibility.swift" /* SwiftCompatibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCompatibility.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/SysProcess.swift" /* SysProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysProcess.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Utilities.swift" /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectNet-2.0.0/Sources/Net.swift" /* Net.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Net.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectNet-2.0.0/Sources/NetEvent.swift" /* NetEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetEvent.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectNet-2.0.0/Sources/NetNamedPipe.swift" /* NetNamedPipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetNamedPipe.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectNet-2.0.0/Sources/NetTCP.swift" /* NetTCP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetTCP.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectNet-2.0.0/Sources/NetTCPSSL.swift" /* NetTCPSSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetTCPSSL.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectThread-2.0.1/Sources/ThreadQueue.swift" /* ThreadQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadQueue.swift; sourceTree = "<group>"; };
-		"__PBXFileRef_Packages/PerfectThread-2.0.1/Sources/Threading.swift" /* Threading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Threading.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/MongoDB-2.0.0/Sources/MongoDB/BSON.swift" /* BSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSON.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoClient.swift" /* MongoClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongoClient.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoCollection.swift" /* MongoCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongoCollection.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoConnectionPool.swift" /* MongoConnectionPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongoConnectionPool.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoCursor.swift" /* MongoCursor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongoCursor.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoDatabase.swift" /* MongoDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongoDatabase.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/HTTPFilter.swift" /* HTTPFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPFilter.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/HTTPHeaders.swift" /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/HTTPMethod.swift" /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/HTTPRequest.swift" /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/HTTPResponse.swift" /* HTTPResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/MimeReader.swift" /* MimeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimeReader.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/MimeType.swift" /* MimeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimeType.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/Routing.swift" /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/StaticFileHandler.swift" /* StaticFileHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFileHandler.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectHTTPServer-2.0.3/Sources/CHTTPParser/http_parser.c" /* http_parser.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = http_parser.c; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HPACK.swift" /* HPACK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPACK.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HTTP11Request.swift" /* HTTP11Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP11Request.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HTTP11Response.swift" /* HTTP11Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP11Response.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HTTP2.swift" /* HTTP2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP2.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HTTPServer.swift" /* HTTPServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPServer.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/Bytes.swift" /* Bytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bytes.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/Dir.swift" /* Dir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dir.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/File.swift" /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/JSONConvertible.swift" /* JSONConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONConvertible.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/Log.swift" /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/PerfectError.swift" /* PerfectError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectError.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/PerfectServer.swift" /* PerfectServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectServer.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/SwiftCompatibility.swift" /* SwiftCompatibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCompatibility.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/SysProcess.swift" /* SysProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SysProcess.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/Utilities.swift" /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectMustache-2.0.0/Sources/Mustache.swift" /* Mustache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mustache.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectNet-2.0.1/Sources/Net.swift" /* Net.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Net.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectNet-2.0.1/Sources/NetEvent.swift" /* NetEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetEvent.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectNet-2.0.1/Sources/NetNamedPipe.swift" /* NetNamedPipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetNamedPipe.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectNet-2.0.1/Sources/NetTCP.swift" /* NetTCP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetTCP.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectNet-2.0.1/Sources/NetTCPSSL.swift" /* NetTCPSSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetTCPSSL.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectThread-2.0.2/Sources/ThreadQueue.swift" /* ThreadQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadQueue.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Packages/PerfectThread-2.0.2/Sources/Threading.swift" /* Threading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Threading.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/APIRouting.swift /* RoutingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingAPI.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/AuthRouting.swift /* RoutingAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingAuth.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/ContentType.swift /* ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/Endpoint.swift /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/ErrorResponse.swift /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		"__PBXFileRef_Sources/HTTPResponse+MS.swift" /* HTTPResponse+MS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPResponse+MS.swift"; sourceTree = "<group>"; };
 		__PBXFileRef_Sources/arguments.swift /* arguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arguments.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Sources/main.swift /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		__PBXFileRef_webroot /* webroot */ = {isa = PBXFileReference; lastKnownFileType = folder; path = webroot; sourceTree = "<group>"; };
 		"_____Product_CHTTPParser" /* CHTTPParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CHTTPParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_COpenSSL" /* COpenSSL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = COpenSSL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_MisionServer" /* MisionServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = MisionServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_MongoDB" /* MongoDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MongoDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_PerfectHTTP" /* PerfectHTTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PerfectHTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_PerfectHTTPServer" /* PerfectHTTPServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PerfectHTTPServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_PerfectLib" /* PerfectLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PerfectLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"_____Product_PerfectMustache" /* PerfectMustache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PerfectMustache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_PerfectNet" /* PerfectNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PerfectNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"_____Product_PerfectThread" /* PerfectThread.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PerfectThread.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -1572,6 +1611,15 @@
 				_LinkFileRef_PerfectHTTP_via_MisionServer /* PerfectHTTP.framework in Frameworks */,
 				_LinkFileRef_CHTTPParser_via_MisionServer /* CHTTPParser.framework in Frameworks */,
 				_LinkFileRef_PerfectHTTPServer_via_MisionServer /* PerfectHTTPServer.framework in Frameworks */,
+				_LinkFileRef_MongoDB_via_MisionServer /* MongoDB.framework in Frameworks */,
+				_LinkFileRef_PerfectMustache_via_MisionServer /* PerfectMustache.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		"___LinkPhase_MongoDB" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1606,6 +1654,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		"___LinkPhase_PerfectMustache" /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				_LinkFileRef_PerfectLib_via_PerfectMustache /* PerfectLib.framework in Frameworks */,
+				_LinkFileRef_COpenSSL_via_PerfectMustache /* COpenSSL.framework in Frameworks */,
+				_LinkFileRef_PerfectThread_via_PerfectMustache /* PerfectThread.framework in Frameworks */,
+				_LinkFileRef_PerfectNet_via_PerfectMustache /* PerfectNet.framework in Frameworks */,
+				_LinkFileRef_PerfectHTTP_via_PerfectMustache /* PerfectHTTP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		"___LinkPhase_PerfectNet" /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
@@ -1632,38 +1692,13 @@
 				"_______Group_PerfectHTTP" /* PerfectHTTP */,
 				"_______Group_PerfectNet" /* PerfectNet */,
 				"_______Group_PerfectHTTPServer" /* PerfectHTTPServer */,
+				"_______Group_MongoDB" /* MongoDB */,
+				"_______Group_PerfectMustache" /* PerfectMustache */,
 				"_______Group_CHTTPParser" /* CHTTPParser */,
 				"_______Group_COpenSSL" /* COpenSSL */,
 				"_______Group_PerfectThread" /* PerfectThread */,
 			);
 			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		E48F46C11DA49884000FFF52 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				E48F46C21DA498CD000FFF52 /* Authentication.swift */,
-			);
-			name = Auth;
-			sourceTree = "<group>";
-		};
-		E48F46CA1DA4A970000FFF52 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				E48F46C41DA4A07A000FFF52 /* Endpoint.swift */,
-				E48F46C81DA4A90C000FFF52 /* ContentType.swift */,
-				E48F46C61DA4A787000FFF52 /* ErrorResponse.swift */,
-				E48F46CC1DA4ADB5000FFF52 /* Extension.swift */,
-			);
-			name = Shared;
-			sourceTree = "<group>";
-		};
-		E48F46CB1DA4A98D000FFF52 /* Routes */ = {
-			isa = PBXGroup;
-			children = (
-				E48F46C11DA49884000FFF52 /* Auth */,
-			);
-			name = Routes;
 			sourceTree = "<group>";
 		};
 		"___RootGroup_" = {
@@ -1688,6 +1723,8 @@
 				"_____Product_PerfectHTTP" /* PerfectHTTP.framework */,
 				"_____Product_CHTTPParser" /* CHTTPParser.framework */,
 				"_____Product_PerfectHTTPServer" /* PerfectHTTPServer.framework */,
+				"_____Product_MongoDB" /* MongoDB.framework */,
+				"_____Product_PerfectMustache" /* PerfectMustache.framework */,
 				"_____Product_MisionServer" /* MisionServer */,
 			);
 			name = Products;
@@ -1712,10 +1749,10 @@
 		"_______Group_CHTTPParser" /* CHTTPParser */ = {
 			isa = PBXGroup;
 			children = (
-				"__PBXFileRef_Packages/PerfectHTTPServer-2.0.0/Sources/CHTTPParser/http_parser.c" /* http_parser.c */,
+				"__PBXFileRef_Packages/PerfectHTTPServer-2.0.3/Sources/CHTTPParser/http_parser.c" /* http_parser.c */,
 			);
 			name = CHTTPParser;
-			path = "Packages/PerfectHTTPServer-2.0.0/Sources/CHTTPParser";
+			path = "Packages/PerfectHTTPServer-2.0.3/Sources/CHTTPParser";
 			sourceTree = "<group>";
 		};
 		"_______Group_COpenSSL" /* COpenSSL */ = {
@@ -2411,8 +2448,12 @@
 		"_______Group_MisionServer" /* MisionServer */ = {
 			isa = PBXGroup;
 			children = (
-				E48F46CA1DA4A970000FFF52 /* Shared */,
-				E48F46CB1DA4A98D000FFF52 /* Routes */,
+				__PBXFileRef_Sources/APIRouting.swift /* RoutingAPI.swift */,
+				__PBXFileRef_Sources/AuthRouting.swift /* RoutingAuth.swift */,
+				__PBXFileRef_Sources/ContentType.swift /* ContentType.swift */,
+				__PBXFileRef_Sources/Endpoint.swift /* Endpoint.swift */,
+				__PBXFileRef_Sources/ErrorResponse.swift /* ErrorResponse.swift */,
+				"__PBXFileRef_Sources/HTTPResponse+MS.swift" /* HTTPResponse+MS.swift */,
 				__PBXFileRef_Sources/arguments.swift /* arguments.swift */,
 				__PBXFileRef_Sources/main.swift /* main.swift */,
 			);
@@ -2420,75 +2461,98 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		"_______Group_MongoDB" /* MongoDB */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/MongoDB-2.0.0/Sources/MongoDB/BSON.swift" /* BSON.swift */,
+				"__PBXFileRef_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoClient.swift" /* MongoClient.swift */,
+				"__PBXFileRef_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoCollection.swift" /* MongoCollection.swift */,
+				"__PBXFileRef_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoConnectionPool.swift" /* MongoConnectionPool.swift */,
+				"__PBXFileRef_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoCursor.swift" /* MongoCursor.swift */,
+				"__PBXFileRef_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoDatabase.swift" /* MongoDatabase.swift */,
+			);
+			name = MongoDB;
+			path = "Packages/MongoDB-2.0.0/Sources/MongoDB";
+			sourceTree = "<group>";
+		};
 		"_______Group_PerfectHTTP" /* PerfectHTTP */ = {
 			isa = PBXGroup;
 			children = (
-				"__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/HTTPFilter.swift" /* HTTPFilter.swift */,
-				"__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/HTTPHeaders.swift" /* HTTPHeaders.swift */,
-				"__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/HTTPMethod.swift" /* HTTPMethod.swift */,
-				"__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/HTTPRequest.swift" /* HTTPRequest.swift */,
-				"__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/HTTPResponse.swift" /* HTTPResponse.swift */,
-				"__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/MimeReader.swift" /* MimeReader.swift */,
-				"__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/MimeType.swift" /* MimeType.swift */,
-				"__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/Routing.swift" /* Routing.swift */,
-				"__PBXFileRef_Packages/PerfectHTTP-2.0.2/Sources/StaticFileHandler.swift" /* StaticFileHandler.swift */,
+				"__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/HTTPFilter.swift" /* HTTPFilter.swift */,
+				"__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/HTTPHeaders.swift" /* HTTPHeaders.swift */,
+				"__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/HTTPMethod.swift" /* HTTPMethod.swift */,
+				"__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/HTTPRequest.swift" /* HTTPRequest.swift */,
+				"__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/HTTPResponse.swift" /* HTTPResponse.swift */,
+				"__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/MimeReader.swift" /* MimeReader.swift */,
+				"__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/MimeType.swift" /* MimeType.swift */,
+				"__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/Routing.swift" /* Routing.swift */,
+				"__PBXFileRef_Packages/PerfectHTTP-2.0.4/Sources/StaticFileHandler.swift" /* StaticFileHandler.swift */,
 			);
 			name = PerfectHTTP;
-			path = "Packages/PerfectHTTP-2.0.2/Sources";
+			path = "Packages/PerfectHTTP-2.0.4/Sources";
 			sourceTree = "<group>";
 		};
 		"_______Group_PerfectHTTPServer" /* PerfectHTTPServer */ = {
 			isa = PBXGroup;
 			children = (
-				"__PBXFileRef_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HPACK.swift" /* HPACK.swift */,
-				"__PBXFileRef_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HTTP11Request.swift" /* HTTP11Request.swift */,
-				"__PBXFileRef_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HTTP11Response.swift" /* HTTP11Response.swift */,
-				"__PBXFileRef_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HTTP2.swift" /* HTTP2.swift */,
-				"__PBXFileRef_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HTTPServer.swift" /* HTTPServer.swift */,
+				"__PBXFileRef_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HPACK.swift" /* HPACK.swift */,
+				"__PBXFileRef_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HTTP11Request.swift" /* HTTP11Request.swift */,
+				"__PBXFileRef_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HTTP11Response.swift" /* HTTP11Response.swift */,
+				"__PBXFileRef_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HTTP2.swift" /* HTTP2.swift */,
+				"__PBXFileRef_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HTTPServer.swift" /* HTTPServer.swift */,
 			);
 			name = PerfectHTTPServer;
-			path = "Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer";
+			path = "Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer";
 			sourceTree = "<group>";
 		};
 		"_______Group_PerfectLib" /* PerfectLib */ = {
 			isa = PBXGroup;
 			children = (
-				"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Bytes.swift" /* Bytes.swift */,
-				"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Dir.swift" /* Dir.swift */,
-				"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/File.swift" /* File.swift */,
-				"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/JSONConvertible.swift" /* JSONConvertible.swift */,
-				"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Log.swift" /* Log.swift */,
-				"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectError.swift" /* PerfectError.swift */,
-				"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectServer.swift" /* PerfectServer.swift */,
-				"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/SwiftCompatibility.swift" /* SwiftCompatibility.swift */,
-				"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/SysProcess.swift" /* SysProcess.swift */,
-				"__PBXFileRef_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Utilities.swift" /* Utilities.swift */,
+				"__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/Bytes.swift" /* Bytes.swift */,
+				"__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/Dir.swift" /* Dir.swift */,
+				"__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/File.swift" /* File.swift */,
+				"__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/JSONConvertible.swift" /* JSONConvertible.swift */,
+				"__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/Log.swift" /* Log.swift */,
+				"__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/PerfectError.swift" /* PerfectError.swift */,
+				"__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/PerfectServer.swift" /* PerfectServer.swift */,
+				"__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/SwiftCompatibility.swift" /* SwiftCompatibility.swift */,
+				"__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/SysProcess.swift" /* SysProcess.swift */,
+				"__PBXFileRef_Packages/PerfectLib-2.0.1/Sources/PerfectLib/Utilities.swift" /* Utilities.swift */,
 			);
 			name = PerfectLib;
-			path = "Packages/PerfectLib-2.0.0/Sources/PerfectLib";
+			path = "Packages/PerfectLib-2.0.1/Sources/PerfectLib";
+			sourceTree = "<group>";
+		};
+		"_______Group_PerfectMustache" /* PerfectMustache */ = {
+			isa = PBXGroup;
+			children = (
+				"__PBXFileRef_Packages/PerfectMustache-2.0.0/Sources/Mustache.swift" /* Mustache.swift */,
+			);
+			name = PerfectMustache;
+			path = "Packages/PerfectMustache-2.0.0/Sources";
 			sourceTree = "<group>";
 		};
 		"_______Group_PerfectNet" /* PerfectNet */ = {
 			isa = PBXGroup;
 			children = (
-				"__PBXFileRef_Packages/PerfectNet-2.0.0/Sources/Net.swift" /* Net.swift */,
-				"__PBXFileRef_Packages/PerfectNet-2.0.0/Sources/NetEvent.swift" /* NetEvent.swift */,
-				"__PBXFileRef_Packages/PerfectNet-2.0.0/Sources/NetNamedPipe.swift" /* NetNamedPipe.swift */,
-				"__PBXFileRef_Packages/PerfectNet-2.0.0/Sources/NetTCP.swift" /* NetTCP.swift */,
-				"__PBXFileRef_Packages/PerfectNet-2.0.0/Sources/NetTCPSSL.swift" /* NetTCPSSL.swift */,
+				"__PBXFileRef_Packages/PerfectNet-2.0.1/Sources/Net.swift" /* Net.swift */,
+				"__PBXFileRef_Packages/PerfectNet-2.0.1/Sources/NetEvent.swift" /* NetEvent.swift */,
+				"__PBXFileRef_Packages/PerfectNet-2.0.1/Sources/NetNamedPipe.swift" /* NetNamedPipe.swift */,
+				"__PBXFileRef_Packages/PerfectNet-2.0.1/Sources/NetTCP.swift" /* NetTCP.swift */,
+				"__PBXFileRef_Packages/PerfectNet-2.0.1/Sources/NetTCPSSL.swift" /* NetTCPSSL.swift */,
 			);
 			name = PerfectNet;
-			path = "Packages/PerfectNet-2.0.0/Sources";
+			path = "Packages/PerfectNet-2.0.1/Sources";
 			sourceTree = "<group>";
 		};
 		"_______Group_PerfectThread" /* PerfectThread */ = {
 			isa = PBXGroup;
 			children = (
-				"__PBXFileRef_Packages/PerfectThread-2.0.1/Sources/Threading.swift" /* Threading.swift */,
-				"__PBXFileRef_Packages/PerfectThread-2.0.1/Sources/ThreadQueue.swift" /* ThreadQueue.swift */,
+				"__PBXFileRef_Packages/PerfectThread-2.0.2/Sources/Threading.swift" /* Threading.swift */,
+				"__PBXFileRef_Packages/PerfectThread-2.0.2/Sources/ThreadQueue.swift" /* ThreadQueue.swift */,
 			);
 			name = PerfectThread;
-			path = "Packages/PerfectThread-2.0.1/Sources";
+			path = "Packages/PerfectThread-2.0.2/Sources";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2548,11 +2612,29 @@
 				__Dependency_PerfectHTTP /* PBXTargetDependency */,
 				__Dependency_CHTTPParser /* PBXTargetDependency */,
 				__Dependency_PerfectHTTPServer /* PBXTargetDependency */,
+				__Dependency_MongoDB /* PBXTargetDependency */,
+				__Dependency_PerfectMustache /* PBXTargetDependency */,
 			);
 			name = MisionServer;
 			productName = MisionServer;
 			productReference = "_____Product_MisionServer" /* MisionServer */;
 			productType = "com.apple.product-type.tool";
+		};
+		"______Target_MongoDB" /* MongoDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_MongoDB" /* Build configuration list for PBXNativeTarget "MongoDB" */;
+			buildPhases = (
+				CompilePhase_MongoDB /* Sources */,
+				"___LinkPhase_MongoDB" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MongoDB;
+			productName = MongoDB;
+			productReference = "_____Product_MongoDB" /* MongoDB.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		"______Target_PerfectHTTP" /* PerfectHTTP */ = {
 			isa = PBXNativeTarget;
@@ -2610,6 +2692,27 @@
 			name = PerfectLib;
 			productName = PerfectLib;
 			productReference = "_____Product_PerfectLib" /* PerfectLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"______Target_PerfectMustache" /* PerfectMustache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = "_______Confs_PerfectMustache" /* Build configuration list for PBXNativeTarget "PerfectMustache" */;
+			buildPhases = (
+				CompilePhase_PerfectMustache /* Sources */,
+				"___LinkPhase_PerfectMustache" /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				__Dependency_PerfectLib /* PBXTargetDependency */,
+				__Dependency_COpenSSL /* PBXTargetDependency */,
+				__Dependency_PerfectThread /* PBXTargetDependency */,
+				__Dependency_PerfectNet /* PBXTargetDependency */,
+				__Dependency_PerfectHTTP /* PBXTargetDependency */,
+			);
+			name = PerfectMustache;
+			productName = PerfectMustache;
+			productReference = "_____Product_PerfectMustache" /* PerfectMustache.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		"______Target_PerfectNet" /* PerfectNet */ = {
@@ -2673,6 +2776,8 @@
 				"______Target_PerfectHTTP" /* PerfectHTTP */,
 				"______Target_CHTTPParser" /* CHTTPParser */,
 				"______Target_PerfectHTTPServer" /* PerfectHTTPServer */,
+				"______Target_MongoDB" /* MongoDB */,
+				"______Target_PerfectMustache" /* PerfectMustache */,
 				"______Target_MisionServer" /* MisionServer */,
 			);
 		};
@@ -2683,7 +2788,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				"__src_cc_ref_Packages/PerfectHTTPServer-2.0.0/Sources/CHTTPParser/http_parser.c" /* http_parser.c in Sources */,
+				"__src_cc_ref_Packages/PerfectHTTPServer-2.0.3/Sources/CHTTPParser/http_parser.c" /* http_parser.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3380,13 +3485,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				E48F46C71DA4A787000FFF52 /* ErrorResponse.swift in Sources */,
+				__src_cc_ref_Sources/APIRouting.swift /* RoutingAPI.swift in Sources */,
 				__src_cc_ref_Sources/arguments.swift /* arguments.swift in Sources */,
-				E48F46CD1DA4ADB5000FFF52 /* Extension.swift in Sources */,
+				__src_cc_ref_Sources/AuthRouting.swift /* RoutingAuth.swift in Sources */,
+				__src_cc_ref_Sources/ContentType.swift /* ContentType.swift in Sources */,
+				__src_cc_ref_Sources/Endpoint.swift /* Endpoint.swift in Sources */,
+				__src_cc_ref_Sources/ErrorResponse.swift /* ErrorResponse.swift in Sources */,
+				"__src_cc_ref_Sources/HTTPResponse+MS.swift" /* HTTPResponse+MS.swift in Sources */,
 				__src_cc_ref_Sources/main.swift /* main.swift in Sources */,
-				E48F46C51DA4A07A000FFF52 /* Endpoint.swift in Sources */,
-				E48F46C31DA498CD000FFF52 /* Authentication.swift in Sources */,
-				E48F46C91DA4A90C000FFF52 /* ContentType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_MongoDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/MongoDB-2.0.0/Sources/MongoDB/BSON.swift" /* BSON.swift in Sources */,
+				"__src_cc_ref_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoClient.swift" /* MongoClient.swift in Sources */,
+				"__src_cc_ref_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoCollection.swift" /* MongoCollection.swift in Sources */,
+				"__src_cc_ref_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoConnectionPool.swift" /* MongoConnectionPool.swift in Sources */,
+				"__src_cc_ref_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoCursor.swift" /* MongoCursor.swift in Sources */,
+				"__src_cc_ref_Packages/MongoDB-2.0.0/Sources/MongoDB/MongoDatabase.swift" /* MongoDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3394,15 +3513,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				"__src_cc_ref_Packages/PerfectHTTP-2.0.2/Sources/HTTPFilter.swift" /* HTTPFilter.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectHTTP-2.0.2/Sources/HTTPHeaders.swift" /* HTTPHeaders.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectHTTP-2.0.2/Sources/HTTPMethod.swift" /* HTTPMethod.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectHTTP-2.0.2/Sources/HTTPRequest.swift" /* HTTPRequest.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectHTTP-2.0.2/Sources/HTTPResponse.swift" /* HTTPResponse.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectHTTP-2.0.2/Sources/MimeReader.swift" /* MimeReader.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectHTTP-2.0.2/Sources/MimeType.swift" /* MimeType.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectHTTP-2.0.2/Sources/Routing.swift" /* Routing.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectHTTP-2.0.2/Sources/StaticFileHandler.swift" /* StaticFileHandler.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectHTTP-2.0.4/Sources/HTTPFilter.swift" /* HTTPFilter.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectHTTP-2.0.4/Sources/HTTPHeaders.swift" /* HTTPHeaders.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectHTTP-2.0.4/Sources/HTTPMethod.swift" /* HTTPMethod.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectHTTP-2.0.4/Sources/HTTPRequest.swift" /* HTTPRequest.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectHTTP-2.0.4/Sources/HTTPResponse.swift" /* HTTPResponse.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectHTTP-2.0.4/Sources/MimeReader.swift" /* MimeReader.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectHTTP-2.0.4/Sources/MimeType.swift" /* MimeType.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectHTTP-2.0.4/Sources/Routing.swift" /* Routing.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectHTTP-2.0.4/Sources/StaticFileHandler.swift" /* StaticFileHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3410,11 +3529,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				"__src_cc_ref_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HPACK.swift" /* HPACK.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HTTP11Request.swift" /* HTTP11Request.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HTTP11Response.swift" /* HTTP11Response.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HTTP2.swift" /* HTTP2.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectHTTPServer-2.0.0/Sources/PerfectHTTPServer/HTTPServer.swift" /* HTTPServer.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HPACK.swift" /* HPACK.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HTTP11Request.swift" /* HTTP11Request.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HTTP11Response.swift" /* HTTP11Response.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HTTP2.swift" /* HTTP2.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectHTTPServer-2.0.3/Sources/PerfectHTTPServer/HTTPServer.swift" /* HTTPServer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3422,16 +3541,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Bytes.swift" /* Bytes.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Dir.swift" /* Dir.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/File.swift" /* File.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/JSONConvertible.swift" /* JSONConvertible.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Log.swift" /* Log.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectError.swift" /* PerfectError.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/PerfectServer.swift" /* PerfectServer.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/SwiftCompatibility.swift" /* SwiftCompatibility.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/SysProcess.swift" /* SysProcess.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectLib-2.0.0/Sources/PerfectLib/Utilities.swift" /* Utilities.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectLib-2.0.1/Sources/PerfectLib/Bytes.swift" /* Bytes.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectLib-2.0.1/Sources/PerfectLib/Dir.swift" /* Dir.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectLib-2.0.1/Sources/PerfectLib/File.swift" /* File.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectLib-2.0.1/Sources/PerfectLib/JSONConvertible.swift" /* JSONConvertible.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectLib-2.0.1/Sources/PerfectLib/Log.swift" /* Log.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectLib-2.0.1/Sources/PerfectLib/PerfectError.swift" /* PerfectError.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectLib-2.0.1/Sources/PerfectLib/PerfectServer.swift" /* PerfectServer.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectLib-2.0.1/Sources/PerfectLib/SwiftCompatibility.swift" /* SwiftCompatibility.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectLib-2.0.1/Sources/PerfectLib/SysProcess.swift" /* SysProcess.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectLib-2.0.1/Sources/PerfectLib/Utilities.swift" /* Utilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CompilePhase_PerfectMustache /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				"__src_cc_ref_Packages/PerfectMustache-2.0.0/Sources/Mustache.swift" /* Mustache.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3439,11 +3566,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				"__src_cc_ref_Packages/PerfectNet-2.0.0/Sources/Net.swift" /* Net.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectNet-2.0.0/Sources/NetEvent.swift" /* NetEvent.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectNet-2.0.0/Sources/NetNamedPipe.swift" /* NetNamedPipe.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectNet-2.0.0/Sources/NetTCP.swift" /* NetTCP.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectNet-2.0.0/Sources/NetTCPSSL.swift" /* NetTCPSSL.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectNet-2.0.1/Sources/Net.swift" /* Net.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectNet-2.0.1/Sources/NetEvent.swift" /* NetEvent.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectNet-2.0.1/Sources/NetNamedPipe.swift" /* NetNamedPipe.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectNet-2.0.1/Sources/NetTCP.swift" /* NetTCP.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectNet-2.0.1/Sources/NetTCPSSL.swift" /* NetTCPSSL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3451,8 +3578,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				"__src_cc_ref_Packages/PerfectThread-2.0.1/Sources/Threading.swift" /* Threading.swift in Sources */,
-				"__src_cc_ref_Packages/PerfectThread-2.0.1/Sources/ThreadQueue.swift" /* ThreadQueue.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectThread-2.0.2/Sources/Threading.swift" /* Threading.swift in Sources */,
+				"__src_cc_ref_Packages/PerfectThread-2.0.2/Sources/ThreadQueue.swift" /* ThreadQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3462,37 +3589,47 @@
 		__Dependency_CHTTPParser /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_CHTTPParser" /* CHTTPParser */;
-			targetProxy = E43DABEB1DA372B800100154 /* PBXContainerItemProxy */;
+			targetProxy = E4BF36761DAEDE2F003582FB /* PBXContainerItemProxy */;
 		};
 		__Dependency_COpenSSL /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_COpenSSL" /* COpenSSL */;
-			targetProxy = E43DABE61DA372B800100154 /* PBXContainerItemProxy */;
+			targetProxy = E4BF36711DAEDE2F003582FB /* PBXContainerItemProxy */;
+		};
+		__Dependency_MongoDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_MongoDB" /* MongoDB */;
+			targetProxy = E4BF36781DAEDE2F003582FB /* PBXContainerItemProxy */;
 		};
 		__Dependency_PerfectHTTP /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_PerfectHTTP" /* PerfectHTTP */;
-			targetProxy = E43DABEA1DA372B800100154 /* PBXContainerItemProxy */;
+			targetProxy = E4BF36751DAEDE2F003582FB /* PBXContainerItemProxy */;
 		};
 		__Dependency_PerfectHTTPServer /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_PerfectHTTPServer" /* PerfectHTTPServer */;
-			targetProxy = E43DABEC1DA372B800100154 /* PBXContainerItemProxy */;
+			targetProxy = E4BF36771DAEDE2F003582FB /* PBXContainerItemProxy */;
 		};
 		__Dependency_PerfectLib /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_PerfectLib" /* PerfectLib */;
-			targetProxy = E43DABE81DA372B800100154 /* PBXContainerItemProxy */;
+			targetProxy = E4BF36731DAEDE2F003582FB /* PBXContainerItemProxy */;
+		};
+		__Dependency_PerfectMustache /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "______Target_PerfectMustache" /* PerfectMustache */;
+			targetProxy = E4BF36791DAEDE2F003582FB /* PBXContainerItemProxy */;
 		};
 		__Dependency_PerfectNet /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_PerfectNet" /* PerfectNet */;
-			targetProxy = E43DABE91DA372B800100154 /* PBXContainerItemProxy */;
+			targetProxy = E4BF36741DAEDE2F003582FB /* PBXContainerItemProxy */;
 		};
 		__Dependency_PerfectThread /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_PerfectThread" /* PerfectThread */;
-			targetProxy = E43DABE71DA372B800100154 /* PBXContainerItemProxy */;
+			targetProxy = E4BF36721DAEDE2F003582FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -3540,13 +3677,51 @@
 				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				HEADER_SEARCH_PATHS = (
 					"/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include",
-					"/Users/Theo/Documents/Development/Server/MisionServer/Packages/PerfectHTTPServer-2.0.0/Sources/CHTTPParser/include",
+					"/Users/Theo/Documents/Development/Server/MisionServer/Packages/PerfectHTTPServer-2.0.3/Sources/CHTTPParser/include",
+					"/Users/Theo/Documents/Development/Server/MisionServer/Packages/libmongoc-2.0.0",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/Cellar/mongo-c/1.4.0/lib",
+					"-lmongoc-1.0",
+					"-lsasl2",
+					"-L/usr/local/Cellar/openssl/1.0.2j/lib",
+					"-lssl",
+					"-lcrypto",
+					"-L/usr/local/Cellar/mongo-c/1.4.0/lib",
+					"-lbson-1.0",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/mongo-c/1.4.0/include/libmongoc-1.0 -I/usr/local/Cellar/mongo-c/1.4.0/include/libbson-1.0";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_MongoDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "/Users/Theo/Documents/Development/Server/MisionServer/Packages/libmongoc-2.0.0";
+				INFOPLIST_FILE = MisionServer.xcodeproj/MongoDB_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/Cellar/mongo-c/1.4.0/lib",
+					"-lmongoc-1.0",
+					"-lsasl2",
+					"-L/usr/local/Cellar/openssl/1.0.2j/lib",
+					"-lssl",
+					"-lcrypto",
+					"-L/usr/local/Cellar/mongo-c/1.4.0/lib",
+					"-lbson-1.0",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/mongo-c/1.4.0/include/libmongoc-1.0 -I/usr/local/Cellar/mongo-c/1.4.0/include/libbson-1.0";
+				PRODUCT_BUNDLE_IDENTIFIER = MongoDB;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -3575,7 +3750,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				HEADER_SEARCH_PATHS = (
 					"/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include",
-					"/Users/Theo/Documents/Development/Server/MisionServer/Packages/PerfectHTTPServer-2.0.0/Sources/CHTTPParser/include",
+					"/Users/Theo/Documents/Development/Server/MisionServer/Packages/PerfectHTTPServer-2.0.3/Sources/CHTTPParser/include",
 				);
 				INFOPLIST_FILE = MisionServer.xcodeproj/PerfectHTTPServer_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
@@ -3598,6 +3773,23 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = PerfectLib;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		_ReleaseConf_PerfectMustache /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include";
+				INFOPLIST_FILE = MisionServer.xcodeproj/PerfectMustache_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PerfectMustache;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SWIFT_VERSION = 3.0;
@@ -3682,13 +3874,52 @@
 				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				HEADER_SEARCH_PATHS = (
 					"/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include",
-					"/Users/Theo/Documents/Development/Server/MisionServer/Packages/PerfectHTTPServer-2.0.0/Sources/CHTTPParser/include",
+					"/Users/Theo/Documents/Development/Server/MisionServer/Packages/PerfectHTTPServer-2.0.3/Sources/CHTTPParser/include",
+					"/Users/Theo/Documents/Development/Server/MisionServer/Packages/libmongoc-2.0.0",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/Cellar/mongo-c/1.4.0/lib",
+					"-lmongoc-1.0",
+					"-lsasl2",
+					"-L/usr/local/Cellar/openssl/1.0.2j/lib",
+					"-lssl",
+					"-lcrypto",
+					"-L/usr/local/Cellar/mongo-c/1.4.0/lib",
+					"-lbson-1.0",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/mongo-c/1.4.0/include/libmongoc-1.0 -I/usr/local/Cellar/mongo-c/1.4.0/include/libbson-1.0";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_MongoDB" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "/Users/Theo/Documents/Development/Server/MisionServer/Packages/libmongoc-2.0.0";
+				INFOPLIST_FILE = MisionServer.xcodeproj/MongoDB_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/Cellar/mongo-c/1.4.0/lib",
+					"-lmongoc-1.0",
+					"-lsasl2",
+					"-L/usr/local/Cellar/openssl/1.0.2j/lib",
+					"-lssl",
+					"-lcrypto",
+					"-L/usr/local/Cellar/mongo-c/1.4.0/lib",
+					"-lbson-1.0",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/mongo-c/1.4.0/include/libmongoc-1.0 -I/usr/local/Cellar/mongo-c/1.4.0/include/libbson-1.0";
+				PRODUCT_BUNDLE_IDENTIFIER = MongoDB;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -3719,7 +3950,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
 				HEADER_SEARCH_PATHS = (
 					"/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include",
-					"/Users/Theo/Documents/Development/Server/MisionServer/Packages/PerfectHTTPServer-2.0.0/Sources/CHTTPParser/include",
+					"/Users/Theo/Documents/Development/Server/MisionServer/Packages/PerfectHTTPServer-2.0.3/Sources/CHTTPParser/include",
 				);
 				INFOPLIST_FILE = MisionServer.xcodeproj/PerfectHTTPServer_Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
@@ -3743,6 +3974,24 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = PerfectLib;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		"___DebugConf_PerfectMustache" /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				HEADER_SEARCH_PATHS = "/Users/Theo/Documents/Development/Server/MisionServer/Packages/COpenSSL-2.0.1/COpenSSL/include";
+				INFOPLIST_FILE = MisionServer.xcodeproj/PerfectMustache_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PerfectMustache;
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -3840,6 +4089,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
+		"_______Confs_MongoDB" /* Build configuration list for PBXNativeTarget "MongoDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_MongoDB" /* Debug */,
+				_ReleaseConf_MongoDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		"_______Confs_PerfectHTTP" /* Build configuration list for PBXNativeTarget "PerfectHTTP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3863,6 +4121,15 @@
 			buildConfigurations = (
 				"___DebugConf_PerfectLib" /* Debug */,
 				_ReleaseConf_PerfectLib /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		"_______Confs_PerfectMustache" /* Build configuration list for PBXNativeTarget "PerfectMustache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				"___DebugConf_PerfectMustache" /* Debug */,
+				_ReleaseConf_PerfectMustache /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
