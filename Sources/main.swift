@@ -37,6 +37,8 @@ routes.add(method: .get, uri: "/", handler: {
 let authRoutes = AuthRouting().routes
 routes.add(routes: authRoutes)
 
+let apiRoutes = APIRouting().routes
+routes.add(routes: apiRoutes)
 
 // Add the routes to the server.
 server.addRoutes(routes)
