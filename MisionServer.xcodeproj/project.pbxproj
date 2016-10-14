@@ -759,74 +759,74 @@
 		"__src_cc_ref_Packages/PerfectNet-2.0.1/Sources/NetTCPSSL.swift" /* NetTCPSSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectNet-2.0.1/Sources/NetTCPSSL.swift" /* NetTCPSSL.swift */; };
 		"__src_cc_ref_Packages/PerfectThread-2.0.2/Sources/ThreadQueue.swift" /* ThreadQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectThread-2.0.2/Sources/ThreadQueue.swift" /* ThreadQueue.swift */; };
 		"__src_cc_ref_Packages/PerfectThread-2.0.2/Sources/Threading.swift" /* Threading.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Packages/PerfectThread-2.0.2/Sources/Threading.swift" /* Threading.swift */; };
-		__src_cc_ref_Sources/APIRouting.swift /* RoutingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/APIRouting.swift /* RoutingAPI.swift */; };
-		__src_cc_ref_Sources/AuthRouting.swift /* RoutingAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/AuthRouting.swift /* RoutingAuth.swift */; };
 		__src_cc_ref_Sources/ContentType.swift /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/ContentType.swift /* ContentType.swift */; };
 		__src_cc_ref_Sources/Endpoint.swift /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/Endpoint.swift /* Endpoint.swift */; };
 		__src_cc_ref_Sources/ErrorResponse.swift /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/ErrorResponse.swift /* ErrorResponse.swift */; };
 		"__src_cc_ref_Sources/HTTPResponse+MS.swift" /* HTTPResponse+MS.swift in Sources */ = {isa = PBXBuildFile; fileRef = "__PBXFileRef_Sources/HTTPResponse+MS.swift" /* HTTPResponse+MS.swift */; };
+		__src_cc_ref_Sources/RoutingAPI.swift /* RoutingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/RoutingAPI.swift /* RoutingAPI.swift */; };
+		__src_cc_ref_Sources/RoutingAuth.swift /* RoutingAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/RoutingAuth.swift /* RoutingAuth.swift */; };
 		__src_cc_ref_Sources/arguments.swift /* arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/arguments.swift /* arguments.swift */; };
 		__src_cc_ref_Sources/main.swift /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = __PBXFileRef_Sources/main.swift /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E4BF36711DAEDE2F003582FB /* PBXContainerItemProxy */ = {
+		E4BF367A1DAF25A0003582FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_COpenSSL";
 			remoteInfo = COpenSSL;
 		};
-		E4BF36721DAEDE2F003582FB /* PBXContainerItemProxy */ = {
+		E4BF367B1DAF25A0003582FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_PerfectThread";
 			remoteInfo = PerfectThread;
 		};
-		E4BF36731DAEDE2F003582FB /* PBXContainerItemProxy */ = {
+		E4BF367C1DAF25A0003582FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_PerfectLib";
 			remoteInfo = PerfectLib;
 		};
-		E4BF36741DAEDE2F003582FB /* PBXContainerItemProxy */ = {
+		E4BF367D1DAF25A0003582FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_PerfectNet";
 			remoteInfo = PerfectNet;
 		};
-		E4BF36751DAEDE2F003582FB /* PBXContainerItemProxy */ = {
+		E4BF367E1DAF25A0003582FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_PerfectHTTP";
 			remoteInfo = PerfectHTTP;
 		};
-		E4BF36761DAEDE2F003582FB /* PBXContainerItemProxy */ = {
+		E4BF367F1DAF25A0003582FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_CHTTPParser";
 			remoteInfo = CHTTPParser;
 		};
-		E4BF36771DAEDE2F003582FB /* PBXContainerItemProxy */ = {
+		E4BF36801DAF25A0003582FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_PerfectHTTPServer";
 			remoteInfo = PerfectHTTPServer;
 		};
-		E4BF36781DAEDE2F003582FB /* PBXContainerItemProxy */ = {
+		E4BF36811DAF25A0003582FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "______Target_MongoDB";
 			remoteInfo = MongoDB;
 		};
-		E4BF36791DAEDE2F003582FB /* PBXContainerItemProxy */ = {
+		E4BF36821DAF25A0003582FB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = __RootObject_ /* Project object */;
 			proxyType = 1;
@@ -1559,12 +1559,12 @@
 		"__PBXFileRef_Packages/PerfectNet-2.0.1/Sources/NetTCPSSL.swift" /* NetTCPSSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetTCPSSL.swift; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/PerfectThread-2.0.2/Sources/ThreadQueue.swift" /* ThreadQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadQueue.swift; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/PerfectThread-2.0.2/Sources/Threading.swift" /* Threading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Threading.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/APIRouting.swift /* RoutingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingAPI.swift; sourceTree = "<group>"; };
-		__PBXFileRef_Sources/AuthRouting.swift /* RoutingAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingAuth.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Sources/ContentType.swift /* ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Sources/Endpoint.swift /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Sources/ErrorResponse.swift /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		"__PBXFileRef_Sources/HTTPResponse+MS.swift" /* HTTPResponse+MS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPResponse+MS.swift"; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/RoutingAPI.swift /* RoutingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingAPI.swift; sourceTree = "<group>"; };
+		__PBXFileRef_Sources/RoutingAuth.swift /* RoutingAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingAuth.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Sources/arguments.swift /* arguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arguments.swift; sourceTree = "<group>"; };
 		__PBXFileRef_Sources/main.swift /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		__PBXFileRef_webroot /* webroot */ = {isa = PBXFileReference; lastKnownFileType = folder; path = webroot; sourceTree = "<group>"; };
@@ -2448,14 +2448,14 @@
 		"_______Group_MisionServer" /* MisionServer */ = {
 			isa = PBXGroup;
 			children = (
-				__PBXFileRef_Sources/APIRouting.swift /* RoutingAPI.swift */,
-				__PBXFileRef_Sources/AuthRouting.swift /* RoutingAuth.swift */,
+				__PBXFileRef_Sources/arguments.swift /* arguments.swift */,
 				__PBXFileRef_Sources/ContentType.swift /* ContentType.swift */,
 				__PBXFileRef_Sources/Endpoint.swift /* Endpoint.swift */,
 				__PBXFileRef_Sources/ErrorResponse.swift /* ErrorResponse.swift */,
 				"__PBXFileRef_Sources/HTTPResponse+MS.swift" /* HTTPResponse+MS.swift */,
-				__PBXFileRef_Sources/arguments.swift /* arguments.swift */,
 				__PBXFileRef_Sources/main.swift /* main.swift */,
+				__PBXFileRef_Sources/RoutingAPI.swift /* RoutingAPI.swift */,
+				__PBXFileRef_Sources/RoutingAuth.swift /* RoutingAuth.swift */,
 			);
 			name = MisionServer;
 			path = Sources;
@@ -3485,14 +3485,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				__src_cc_ref_Sources/APIRouting.swift /* RoutingAPI.swift in Sources */,
 				__src_cc_ref_Sources/arguments.swift /* arguments.swift in Sources */,
-				__src_cc_ref_Sources/AuthRouting.swift /* RoutingAuth.swift in Sources */,
 				__src_cc_ref_Sources/ContentType.swift /* ContentType.swift in Sources */,
 				__src_cc_ref_Sources/Endpoint.swift /* Endpoint.swift in Sources */,
 				__src_cc_ref_Sources/ErrorResponse.swift /* ErrorResponse.swift in Sources */,
 				"__src_cc_ref_Sources/HTTPResponse+MS.swift" /* HTTPResponse+MS.swift in Sources */,
 				__src_cc_ref_Sources/main.swift /* main.swift in Sources */,
+				__src_cc_ref_Sources/RoutingAPI.swift /* RoutingAPI.swift in Sources */,
+				__src_cc_ref_Sources/RoutingAuth.swift /* RoutingAuth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3589,47 +3589,47 @@
 		__Dependency_CHTTPParser /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_CHTTPParser" /* CHTTPParser */;
-			targetProxy = E4BF36761DAEDE2F003582FB /* PBXContainerItemProxy */;
+			targetProxy = E4BF367F1DAF25A0003582FB /* PBXContainerItemProxy */;
 		};
 		__Dependency_COpenSSL /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_COpenSSL" /* COpenSSL */;
-			targetProxy = E4BF36711DAEDE2F003582FB /* PBXContainerItemProxy */;
+			targetProxy = E4BF367A1DAF25A0003582FB /* PBXContainerItemProxy */;
 		};
 		__Dependency_MongoDB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_MongoDB" /* MongoDB */;
-			targetProxy = E4BF36781DAEDE2F003582FB /* PBXContainerItemProxy */;
+			targetProxy = E4BF36811DAF25A0003582FB /* PBXContainerItemProxy */;
 		};
 		__Dependency_PerfectHTTP /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_PerfectHTTP" /* PerfectHTTP */;
-			targetProxy = E4BF36751DAEDE2F003582FB /* PBXContainerItemProxy */;
+			targetProxy = E4BF367E1DAF25A0003582FB /* PBXContainerItemProxy */;
 		};
 		__Dependency_PerfectHTTPServer /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_PerfectHTTPServer" /* PerfectHTTPServer */;
-			targetProxy = E4BF36771DAEDE2F003582FB /* PBXContainerItemProxy */;
+			targetProxy = E4BF36801DAF25A0003582FB /* PBXContainerItemProxy */;
 		};
 		__Dependency_PerfectLib /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_PerfectLib" /* PerfectLib */;
-			targetProxy = E4BF36731DAEDE2F003582FB /* PBXContainerItemProxy */;
+			targetProxy = E4BF367C1DAF25A0003582FB /* PBXContainerItemProxy */;
 		};
 		__Dependency_PerfectMustache /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_PerfectMustache" /* PerfectMustache */;
-			targetProxy = E4BF36791DAEDE2F003582FB /* PBXContainerItemProxy */;
+			targetProxy = E4BF36821DAF25A0003582FB /* PBXContainerItemProxy */;
 		};
 		__Dependency_PerfectNet /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_PerfectNet" /* PerfectNet */;
-			targetProxy = E4BF36741DAEDE2F003582FB /* PBXContainerItemProxy */;
+			targetProxy = E4BF367D1DAF25A0003582FB /* PBXContainerItemProxy */;
 		};
 		__Dependency_PerfectThread /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "______Target_PerfectThread" /* PerfectThread */;
-			targetProxy = E4BF36721DAEDE2F003582FB /* PBXContainerItemProxy */;
+			targetProxy = E4BF367B1DAF25A0003582FB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
