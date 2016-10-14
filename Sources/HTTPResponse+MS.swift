@@ -11,7 +11,7 @@ import PerfectHTTP
 extension HTTPResponse {
     func defaultHeader() {
         let request = self.request.uri
-        self.setHeader(.accessControlAllowOrigin, value: request)
+        self.setHeader(.accessControlAllowOrigin, value: "*")
         self.setHeader(.contentType, value: ContentType.json.rawValue)
     }
     
