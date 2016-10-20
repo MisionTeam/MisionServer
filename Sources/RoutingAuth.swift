@@ -43,13 +43,21 @@ struct AuthRouting {
         response.sendJSONBody(json: body)
     }
     
-    func profilePostHandler(request: HTTPRequest, response: HTTPResponse) {
+    func profileGetHandler(request: HTTPRequest, response: HTTPResponse) {
+        guard let token = request.param(name: "token"), !token.isEmpty else {
+            
+            ErrorResponse.accessDenied(response: response)
+            return
+        }
+        
+        let name: [String: String] = ["firstName": "Tommy", "lastName": "Hardy"]
+        let body: [String: Any] = ["member": name]
+        
         response.defaultHeader()
-        response.defaultBody()
-        response.completed()
+        response.sendJSONBody(json: body)
     }
     
-    func profileGetHandler(request: HTTPRequest, response: HTTPResponse) {
+    func profilePostHandler(request: HTTPRequest, response: HTTPResponse) {
         response.defaultHeader()
         response.defaultBody()
         response.completed()
