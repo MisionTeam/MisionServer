@@ -39,7 +39,7 @@ struct ListGetHandler: MustachePageHandler {
         
         do {
             try contxt.requestCompleted(withCollector: collector)
-        } catch  {
+        } catch {
             let response = contxt.webResponse
             response.status = .internalServerError
             response.appendBody(string: "\(error)")

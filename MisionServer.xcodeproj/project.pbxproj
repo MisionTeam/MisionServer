@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E42E7F8C1DDAC548000AF6E3 /* MongoDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42E7F8B1DDAC548000AF6E3 /* MongoDBHelper.swift */; };
 		_LinkFileRef_CHTTPParser_via_MisionServer /* CHTTPParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CHTTPParser" /* CHTTPParser.framework */; };
 		_LinkFileRef_CHTTPParser_via_PerfectHTTPServer /* CHTTPParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_CHTTPParser" /* CHTTPParser.framework */; };
 		_LinkFileRef_COpenSSL_via_CHTTPParser /* COpenSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "_____Product_COpenSSL" /* COpenSSL.framework */; };
@@ -836,6 +837,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E42E7F8B1DDAC548000AF6E3 /* MongoDBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MongoDBHelper.swift; sourceTree = "<group>"; };
 		__PBXFileRef_MisionServer.xcodeproj/Configs/Project.xcconfig /* MisionServer.xcodeproj/Configs/Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MisionServer.xcodeproj/Configs/Project.xcconfig; sourceTree = "<group>"; };
 		__PBXFileRef_Package.swift /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		"__PBXFileRef_Packages/COpenSSL-2.0.1/COpenSSL/a_bitstr.c" /* a_bitstr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = a_bitstr.c; sourceTree = "<group>"; };
@@ -2456,6 +2458,7 @@
 				__PBXFileRef_Sources/main.swift /* main.swift */,
 				__PBXFileRef_Sources/RoutingAPI.swift /* RoutingAPI.swift */,
 				__PBXFileRef_Sources/RoutingAuth.swift /* RoutingAuth.swift */,
+				E42E7F8B1DDAC548000AF6E3 /* MongoDBHelper.swift */,
 			);
 			name = MisionServer;
 			path = Sources;
@@ -3487,6 +3490,7 @@
 			files = (
 				__src_cc_ref_Sources/arguments.swift /* arguments.swift in Sources */,
 				__src_cc_ref_Sources/ContentType.swift /* ContentType.swift in Sources */,
+				E42E7F8C1DDAC548000AF6E3 /* MongoDBHelper.swift in Sources */,
 				__src_cc_ref_Sources/Endpoint.swift /* Endpoint.swift in Sources */,
 				__src_cc_ref_Sources/ErrorResponse.swift /* ErrorResponse.swift in Sources */,
 				"__src_cc_ref_Sources/HTTPResponse+MS.swift" /* HTTPResponse+MS.swift in Sources */,
