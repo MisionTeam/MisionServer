@@ -17,14 +17,22 @@ struct MongoDBHelper {
     
     private var client: MongoClient
     
-    func testDB() {
+    func testDBInsert() -> Bool {
         
-        defer {
-            collection.close()
-            client.close()
+        if let testJSON = try? ["name": "test"].jsonEncodedString() {
+            if let bson = try? BSON(json: testJSON) {
+                return insert(name: MongoDB.Database.test, collection: MongoDB.Collection.test, bson: bson)
+            }
         }
         
-        let collection = MongoCollection(client: client, databaseName: MongoDB.Database.test, collectionName: MongoDB.Collection.test)
+        return false
+    }
+    
+    func testDBRead() {
+
+        let result = query(name: MongoDB.Database.test, collection: MongoDB.Collection.test, bson: BSON())
+        
+        result.forEach { print("\($0)\n") }
     }
     
     func getUser(id: String) -> BSON {
@@ -39,16 +47,36 @@ struct MongoDBHelper {
         }
         
         struct Collection {
-            static let test = "testcollection"
+            static let test = "test_collection"
         }
     }
     
-    private func query(name: String, collection: String) -> BSON {
-        return BSON()
+    private func query(name: String, collection: String, bson: BSON) -> [String] {
+        let dbCollection = MongoCollection(client: client, databaseName: name, collectionName: collection)
+        
+        var find = [String]()
+        
+        if let result = dbCollection.find(query: bson) {
+            result.forEach { find.append($0.asString) }
+        }
+        
+        return find
     }
     
     private func insert(name: String, collection: String, bson: BSON) -> Bool {
-        return true
+        
+        let dbCollection = MongoCollection(client: client, databaseName: name, collectionName: collection)
+        let result = dbCollection.insert(document: bson)
+        
+        switch result {
+        case .success:
+            return true
+        case let .error(domain, code,  message):
+            print("domain: \(domain), code: \(code), error message: \(message)")
+            return false
+        default:
+            return false
+        }
     }
     
     private func update(name: String, collection: String, bson: BSON) -> Bool {
