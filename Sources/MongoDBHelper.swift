@@ -44,10 +44,13 @@ struct MongoDBHelper {
         
         struct Database {
             static let test = "test"
+            static let production = "production"
         }
         
         struct Collection {
             static let test = "test_collection"
+            static let user = "user"
+            static let mission = "mission"
         }
     }
     
@@ -68,6 +71,25 @@ struct MongoDBHelper {
         let dbCollection = MongoCollection(client: client, databaseName: name, collectionName: collection)
         let result = dbCollection.insert(document: bson)
         
+        return checkResult(result: result)
+    }
+    
+    private func update(name: String, collection: String, update: BSON, selector: BSON) -> Bool {
+        let dbCollection = MongoCollection(client: client, databaseName: name, collectionName: collection)
+        let result = dbCollection.update(update: update, selector: selector)
+        
+        return checkResult(result: result)
+    }
+    
+    private func delete(name: String, collection: String, selector: BSON) -> Bool {
+        let dbCollection = MongoCollection(client: client, databaseName: name, collectionName: collection)
+        let result = dbCollection.remove(selector: selector)
+        
+        return checkResult(result: result)
+    }
+    
+    
+    private func checkResult(result: MongoResult) -> Bool {
         switch result {
         case .success:
             return true
@@ -78,15 +100,5 @@ struct MongoDBHelper {
             return false
         }
     }
-    
-    private func update(name: String, collection: String, bson: BSON) -> Bool {
-        return true
-    }
-    
-    private func delete(name: String, collection: String, bson: BSON) -> Bool {
-        return true
-    }
-    
-    
 }
 
