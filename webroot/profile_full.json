@@ -1,0 +1,32 @@
+{
+   "user":{
+   	  "id": 1053,
+      "firstName":"Tom",
+      "lastName":"Hardy",
+      "gender":"male",
+      "age":30,
+      "email":"hello@testting.com",
+      "phone":6479999999,
+      "avatar":null,
+      "job":null,
+      "hasCar":false,
+      "address":{
+         "lat":79.123455,
+         "lng":120.7473743,
+         "country":"Canada",
+         "state":"ON",
+         "city":"Toronto",
+         "Street":"1 Yonge St",
+         "postcode":"L3C 0B3"
+      },
+      "labels":[
+         "housekeeping",
+         "babysitting",
+         "massage",
+         "cooking"
+      ]
+   },
+   "success":true,
+   "status":200,
+   "error":null
+}

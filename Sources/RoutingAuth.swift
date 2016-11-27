@@ -8,6 +8,7 @@
 
 import PerfectLib
 import PerfectHTTP
+import TurnstileCrypto
 
 struct AuthRouting {
     
@@ -30,17 +31,16 @@ struct AuthRouting {
     func fbLoginHandler(request: HTTPRequest, response: HTTPResponse) {
         guard let fbToken = request.param(name: "fb_token"), !fbToken.isEmpty else {
             
-            response.accessDenied()
+            response.missing(field: "fb_token")
             return
         }
         
         // TODO: check with fb
-        // TODO: generate server token
         
-        let token = UUID().string
-        let body: [String: Any] = ["success": true, "statusCode": 200, "token": token]
+        let token = URandom().secureToken
+        let body: [String: Any] = ["token": token]
     
-        response.sendJSONBody(json: body)
+        response.sendJSONBodyWithSuccess(json: body)
     }
     
     func profileGetHandler(request: HTTPRequest, response: HTTPResponse) {
@@ -50,22 +50,85 @@ struct AuthRouting {
             return
         }
         
-        let name: [String: String] = ["firstName": "Tommy", "lastName": "Hardy"]
-        let body: [String: Any] = ["member": name]
-        
-        response.defaultHeader()
-        response.sendJSONBody(json: body)
+        if let localProfile = loadLocalProfile() {
+            response.sendJSONBodyWithSuccess(json: localProfile)
+        } else {
+            response.notFound()
+        }
     }
     
     func profilePostHandler(request: HTTPRequest, response: HTTPResponse) {
-        response.defaultHeader()
-        response.defaultBody()
-        response.completed()
+        guard let token = request.param(name: "token"), !token.isEmpty else {
+            
+            response.accessDenied()
+            return
+        }
+        
+        guard let profileString = request.param(name: "user") else {
+            response.missing(field: "user")
+            return
+        }
+        
+        guard let profile = (try? profileString.jsonDecode()) as? [String: Any] else {
+            response.decodeError()
+            return
+        }
+        
+        let validation = check(profile: profile)
+        
+        if validation.valid {
+            response.sendJSONBodyWithSuccess(json: nil)
+        } else {
+            response.missing(field: validation.missing)
+        }
     }
     
     func logoutHandler(request: HTTPRequest, response: HTTPResponse) {
-        response.defaultHeader()
-        response.defaultBody()
-        response.completed()
+        response.sendJSONBodyWithSuccess(json: nil)
+    }
+    
+    private func loadLocalProfile() -> [String: Any]? {
+        let profileFile = File("./webroot/profile_full.json")
+        
+        if let jsonString = try? profileFile.readString() {
+            if let decoded = (try? jsonString.jsonDecode()) as? [String: Any] {
+                return decoded
+            }
+        }
+        
+        return nil
+    }
+    
+    private func check(profile: [String: Any]) -> (valid: Bool, missing: String) {
+        
+        struct Required {
+            static let gender = "gender"
+            static let firstName = "firstName"
+            static let lastName = "lastName"
+            static let age = "age"
+            static let email = "email"
+        }
+        
+        guard let _ = profile[Required.gender] else {
+            return (false, Required.gender)
+        }
+        
+        guard let _ = profile[Required.firstName] else {
+            return (false, Required.firstName)
+        }
+        
+        guard let _ = profile[Required.lastName] else {
+            return (false, Required.lastName)
+        }
+        
+        guard let _ = profile[Required.age] else {
+            return (false, Required.age)
+        }
+        
+        guard let _ = profile[Required.email] else {
+            return (false, Required.email)
+        }
+        
+        return (true, "")
     }
 }

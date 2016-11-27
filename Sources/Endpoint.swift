@@ -57,7 +57,7 @@ enum AuthEndpoint {
     
     var method: HTTPMethod {
         switch self {
-        case .fbLogin: return .post
+        case .fbLogin: return .get
         case .updateProfile: return .post
         case .profileFull: return .get
         case .profileBasic: return .get
