@@ -20,7 +20,7 @@ struct APIRouting {
     }
     
     mutating func buildRoutes() {
-        routes.add(method: .get, uri: APIEndpoint.list.rawValue, handler: apiListGetHandler)
+        routes.add(method: APIEndpoint.list.method, uri: APIEndpoint.list.uri, handler: apiListGetHandler)
     }
     
     func apiListGetHandler(request: HTTPRequest, response: HTTPResponse) {
@@ -33,7 +33,7 @@ struct APIRouting {
 struct ListGetHandler: MustachePageHandler {
     func extendValuesForResponse(context contxt: MustacheWebEvaluationContext, collector: MustacheEvaluationOutputCollector) {
         
-        let authAPI: [String: Any] = ["title": AuthEndpoint.title, "endpoints": AuthEndpoint.endpoints]
+        let authAPI: [String: Any] = ["title": AuthEndpoint.title, "endpoints": AuthEndpoint.endpointRef]
         
         contxt.extendValues(with: authAPI)
         

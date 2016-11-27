@@ -8,6 +8,13 @@
 
 import PerfectHTTP
 
+enum Status: Int {
+    case success        = 200
+    
+    case accessDenied   = 401,
+         missingField   = 403
+}
+
 extension HTTPResponse {
     func defaultHeader() {
         self.setHeader(.accessControlAllowOrigin, value: "*")
@@ -30,5 +37,19 @@ extension HTTPResponse {
         defer {
             self.completed()
         }
+    }
+    
+    func accessDenied() {
+        
+        let body: [String: Any] = ["success": false, "status": Status.accessDenied, "error": "Access denied or bad access token"]
+        
+        self.sendJSONBody(json: body)
+    }
+    
+    func missing(field: String) {
+        
+        let body: [String: Any] = ["success": false, "status": Status.missingField, "error": "Access denied or bad access token"]
+        
+        self.sendJSONBody(json: body)
     }
 }

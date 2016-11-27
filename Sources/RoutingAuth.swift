@@ -20,17 +20,17 @@ struct AuthRouting {
     }
     
     mutating func buildRoutes() {
-        routes.add(method: .post, uri: AuthEndpoint.login.rawValue, handler: loginHandler)
-        routes.add(method: .get, uri: AuthEndpoint.profile.rawValue, handler: profileGetHandler)
-        routes.add(method: .post, uri: AuthEndpoint.profile.rawValue, handler: profilePostHandler)
-        routes.add(method: .delete, uri: AuthEndpoint.logout.rawValue, handler: logoutHandler)
+        routes.add(method: AuthEndpoint.fbLogin.method, uri: AuthEndpoint.fbLogin.uri, handler: fbLoginHandler)
+        routes.add(method: AuthEndpoint.profileFull.method, uri: AuthEndpoint.profileFull.uri, handler: profileGetHandler)
+        routes.add(method: AuthEndpoint.updateProfile.method, uri: AuthEndpoint.updateProfile.uri, handler: profilePostHandler)
+        routes.add(method: AuthEndpoint.logout.method, uri: AuthEndpoint.logout.uri, handler: logoutHandler)
     }
     
     
-    func loginHandler(request: HTTPRequest, response: HTTPResponse) {
+    func fbLoginHandler(request: HTTPRequest, response: HTTPResponse) {
         guard let fbToken = request.param(name: "fb_token"), !fbToken.isEmpty else {
             
-            ErrorResponse.accessDenied(response: response)
+            response.accessDenied()
             return
         }
         
@@ -46,7 +46,7 @@ struct AuthRouting {
     func profileGetHandler(request: HTTPRequest, response: HTTPResponse) {
         guard let token = request.param(name: "token"), !token.isEmpty else {
             
-            ErrorResponse.accessDenied(response: response)
+            response.accessDenied()
             return
         }
         
