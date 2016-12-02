@@ -25,8 +25,5 @@
          "massage",
          "cooking"
       ]
-   },
-   "success":true,
-   "status":200,
-   "error":null
+   }
 }

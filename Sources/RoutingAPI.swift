@@ -1,5 +1,5 @@
 //
-//  APIRouting.swift
+//  RoutingAPI.swift
 //  MisionServer
 //
 //  Created by Tao on 2016-10-12.
@@ -10,7 +10,7 @@ import PerfectLib
 import PerfectHTTP
 import PerfectMustache
 
-struct APIRouting {
+struct RoutingAPI: RoutesBuilder {
     var routes: Routes
     
     init() {
@@ -33,9 +33,12 @@ struct APIRouting {
 struct ListGetHandler: MustachePageHandler {
     func extendValuesForResponse(context contxt: MustacheWebEvaluationContext, collector: MustacheEvaluationOutputCollector) {
         
-        let authAPI: [String: Any] = ["title": AuthEndpoint.title, "endpoints": AuthEndpoint.endpointRef]
+        let authAPI: [String: Any]      = ["title": AuthEndpoint.title, "endpoints": AuthEndpoint.endpointRef]
+        let profileAPI: [String: Any]   = ["title": ProfileEndpoint.title, "endpoints": ProfileEndpoint.endpointRef]
         
-        contxt.extendValues(with: authAPI)
+        let listOfAPI: [String: Any] = ["apiList": [authAPI, profileAPI]]
+        
+        contxt.extendValues(with: listOfAPI)
         
         do {
             try contxt.requestCompleted(withCollector: collector)
