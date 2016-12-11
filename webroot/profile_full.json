@@ -16,8 +16,8 @@
          "country":"Canada",
          "state":"ON",
          "city":"Toronto",
-         "Street":"1 Yonge St",
-         "postcode":"L3C 0B3"
+         "street":"1 Yonge St",
+         "postalCode":"L3C 0B3"
       },
       "labels":[
          "housekeeping",
