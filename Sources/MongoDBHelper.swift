@@ -76,7 +76,7 @@ struct MongoDBHelper {
     
     private func update(name: String, collection: String, update: BSON, selector: BSON) -> Bool {
         let dbCollection = MongoCollection(client: client, databaseName: name, collectionName: collection)
-        let result = dbCollection.update(update: update, selector: selector)
+        let result = dbCollection.update(selector: selector, update: update)
         
         return checkResult(result: result)
     }

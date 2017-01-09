@@ -14,13 +14,13 @@ struct RoutingAPI: RoutesBuilder {
     var routes: Routes
     
     init() {
-        routes = Routes(baseUri: APIEndpoint.base)
+        routes = Routes(baseUri: APIEndpoint.baseURL)
         
         buildRoutes()
     }
     
     mutating func buildRoutes() {
-        routes.add(method: APIEndpoint.list.method, uri: APIEndpoint.list.uri, handler: apiListGetHandler)
+        routes.add(method: APIEndpoint.list.method, uri: APIEndpoint.list.route, handler: apiListGetHandler)
     }
     
     func apiListGetHandler(request: HTTPRequest, response: HTTPResponse) {

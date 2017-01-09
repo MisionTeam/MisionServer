@@ -38,7 +38,7 @@ let subRoutes: [RoutesBuilder] = [RoutingAPI(),
                                   RoutingAuth(),
                                   RoutingProfile()]
 
-subRoutes.forEach { routes.add(routes: $0.routes) }
+subRoutes.forEach { routes.add($0.routes) }
 
 // Add the routes to the server.
 server.addRoutes(routes)

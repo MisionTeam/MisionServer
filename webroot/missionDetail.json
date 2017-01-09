@@ -1,0 +1,55 @@
+{
+   "id":3004,
+   "category":"transportation",
+   "title":"Get me a dinner!",
+   "description":"Simple task",
+   "status":1,
+   "price":"$20",
+   "author":{
+      "id":1053,
+      "firstName":"Tom",
+      "lastName":"Hardy",
+      "avatar":null
+   },
+   "address":{
+      "lat":79.123455,
+      "lng":120.7473743,
+      "country":"Canada",
+      "state":"ON",
+      "city":"Toronto",
+      "street":"1 Yonge St",
+      "postalCode":"L3C 0B3"
+   },
+   "postDate":"2017-01-09 19:45:38 +000",
+   "deadline":"2017-01-21 04:00:00 +000",
+   "attachment":null,
+   "comments":[
+      {
+         "user":{
+            "id":1053,
+            "firstName":"Tom",
+            "lastName":"Hardy",
+            "avatar":null
+         },
+         "comment":"hi there!"
+      },
+      {
+         "user":{
+            "id":1053,
+            "firstName":"Tom",
+            "lastName":"Hardy",
+            "avatar":null
+         },
+         "comment":"hi there!"
+      },
+      {
+         "user":{
+            "id":1053,
+            "firstName":"Tom",
+            "lastName":"Hardy",
+            "avatar":null
+         },
+         "comment":"hi there!"
+      }
+   ]
+}

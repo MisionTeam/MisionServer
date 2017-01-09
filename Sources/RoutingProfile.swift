@@ -15,17 +15,17 @@ struct RoutingProfile: RoutesBuilder {
     var routes: Routes
     
     init() {
-        routes = Routes(baseUri: ProfileEndpoint.base)
+        routes = Routes(baseUri: ProfileEndpoint.baseURL)
         
         buildRoutes()
     }
     
     mutating func buildRoutes() {
-        routes.add(method: ProfileEndpoint.profileFull.method, uri: ProfileEndpoint.profileFull.uri, handler: getProfileHandler)
-        routes.add(method: ProfileEndpoint.profileBasic.method, uri: ProfileEndpoint.profileBasic.uri, handler: getBasicProfileHandler)
-        routes.add(method: ProfileEndpoint.profilePreview.method, uri: ProfileEndpoint.profilePreview.uri, handler: getPreviewProfileHandler)
-        routes.add(method: ProfileEndpoint.profileLabels.method, uri: ProfileEndpoint.profileLabels.uri, handler: getMyLabelsHandler)
-        routes.add(method: ProfileEndpoint.updateProfile.method, uri: ProfileEndpoint.updateProfile.uri, handler: profilePostHandler)
+        routes.add(method: ProfileEndpoint.full.method, uri: ProfileEndpoint.full.route, handler: getProfileHandler)
+        routes.add(method: ProfileEndpoint.basic.method, uri: ProfileEndpoint.basic.route, handler: getBasicProfileHandler)
+        routes.add(method: ProfileEndpoint.preview.method, uri: ProfileEndpoint.preview.route, handler: getPreviewProfileHandler)
+        routes.add(method: ProfileEndpoint.labels.method, uri: ProfileEndpoint.labels.route, handler: getMyLabelsHandler)
+        routes.add(method: ProfileEndpoint.update.method, uri: ProfileEndpoint.update.route, handler: profilePostHandler)
     }
     
     

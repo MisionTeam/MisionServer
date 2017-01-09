@@ -1,14 +1,10 @@
-{
-   "labels":[
-      "housekeeping",
-      "technology",
-      "tutor",
-      "babysitting",
-      "cooking",
-      "transportation",
-      "car washing"
-   ],
-   "success":true,
-   "status":200,
-   "error":null
-}
+
+[
+ "housekeeping",
+ "technology",
+ "tutor",
+ "babysitting",
+ "cooking",
+ "transportation",
+ "car washing"
+ ]

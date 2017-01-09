@@ -15,14 +15,14 @@ struct RoutingAuth: RoutesBuilder {
     var routes: Routes
     
     init() {
-        routes = Routes(baseUri: AuthEndpoint.base)
+        routes = Routes(baseUri: AuthEndpoint.baseURL)
         
         buildRoutes()
     }
     
     mutating func buildRoutes() {
-        routes.add(method: AuthEndpoint.fbLogin.method, uri: AuthEndpoint.fbLogin.uri, handler: fbLoginHandler)
-        routes.add(method: AuthEndpoint.logout.method, uri: AuthEndpoint.logout.uri, handler: logoutHandler)
+        routes.add(method: AuthEndpoint.fbLogin.method, uri: AuthEndpoint.fbLogin.route, handler: fbLoginHandler)
+        routes.add(method: AuthEndpoint.logout.method, uri: AuthEndpoint.logout.route, handler: logoutHandler)
     }
     
     
