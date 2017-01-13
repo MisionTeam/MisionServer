@@ -67,7 +67,7 @@ struct RoutingProfile: RoutesBuilder {
                 }
             }
             
-            response.sendJSONBodyWithSuccess(json: basicProfile)
+            response.sendJSONBodyWithSuccess(json: ["user": basicProfile])
         } else {
             response.notFound()
         }
@@ -96,7 +96,7 @@ struct RoutingProfile: RoutesBuilder {
                 }
             }
             
-            response.sendJSONBodyWithSuccess(json: previewProfile)
+            response.sendJSONBodyWithSuccess(json: ["user": previewProfile])
         } else {
             response.notFound()
         }

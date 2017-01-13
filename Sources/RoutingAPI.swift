@@ -35,8 +35,9 @@ struct ListGetHandler: MustachePageHandler {
         
         let authAPI: [String: Any]      = ["title": AuthEndpoint.title, "endpoints": AuthEndpoint.endpointRef]
         let profileAPI: [String: Any]   = ["title": ProfileEndpoint.title, "endpoints": ProfileEndpoint.endpointRef]
+        let missionAPI: [String: Any]   = ["title": MissionEndpoint.title, "endpoints": MissionEndpoint.endpointRef]
         
-        let listOfAPI: [String: Any] = ["apiList": [authAPI, profileAPI]]
+        let listOfAPI: [String: Any] = ["apiList": [authAPI, profileAPI, missionAPI]]
         
         contxt.extendValues(with: listOfAPI)
         

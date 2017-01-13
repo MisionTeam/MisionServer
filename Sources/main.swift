@@ -36,7 +36,8 @@ routes.add(method: .get, uri: "/", handler: {
 
 let subRoutes: [RoutesBuilder] = [RoutingAPI(),
                                   RoutingAuth(),
-                                  RoutingProfile()]
+                                  RoutingProfile(),
+                                  RoutingMission()]
 
 subRoutes.forEach { routes.add($0.routes) }
 

@@ -179,7 +179,7 @@ enum MissionEndpoint: Endpoint {
                            ["param": "missionsPerPage"],
                            ["param": "category"]],
             
-            "response"  : [["param": "body"],
+            "response"  : [["param": "missions"],
                            ["param": "success"],
                            ["param": "status"],
                            ["param": "error"]]
@@ -191,7 +191,7 @@ enum MissionEndpoint: Endpoint {
             "request"   : [["param": "token"],
                            ["param": "id"]],
             
-            "response"  : [["param": "body"],
+            "response"  : [["param": "mission"],
                            ["param": "success"],
                            ["param": "status"],
                            ["param": "error"]]
