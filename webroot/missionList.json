@@ -4,7 +4,7 @@
       "category":"transportation",
       "title":"Get me a dinner!",
       "status":1,
-      "price":"$20",
+      "price":"20",
       "author":{
          "id":1053,
          "firstName":"Tom",
@@ -26,7 +26,7 @@
       "category":"housekeeping",
       "title":"Window cleaning",
       "status":1,
-      "price":"$40",
+      "price":"40",
       "author":{
          "id":1092,
          "firstName":"James",
@@ -48,7 +48,7 @@
       "category":"transportation",
       "title":"Send follower!",
       "status":1,
-      "price":"$50",
+      "price":"50",
       "author":{
          "id":1153,
          "firstName":"Mary",

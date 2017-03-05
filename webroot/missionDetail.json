@@ -4,7 +4,7 @@
    "title":"Get me a dinner!",
    "description":"Simple task",
    "status":1,
-   "price":"$20",
+   "price":"20",
    "author":{
       "id":1053,
       "firstName":"Tom",
