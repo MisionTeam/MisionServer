@@ -52,7 +52,7 @@ enum AuthEndpoint: Endpoint {
     var method: HTTPMethod {
         switch self {
         case .fbLogin: return .post
-        case .logout: return .delete
+        case .logout: return .get
         }
     }
     
@@ -68,7 +68,7 @@ enum AuthEndpoint: Endpoint {
         [
             "route"     : AuthEndpoint.baseURL + AuthEndpoint.logout.route,
             "method"    : AuthEndpoint.logout.method.description,
-            "request"   : [["param": "token"]],
+            "request"   : [],
             "response"  : [["param": "success"], ["param": "status"], ["param": "error"]]
         ]
     ]
@@ -111,31 +111,31 @@ enum ProfileEndpoint: Endpoint {
         [
             "route"     : ProfileEndpoint.baseURL + ProfileEndpoint.full.route,
             "method"    : ProfileEndpoint.full.method.description,
-            "request"   : [["param": "token"]],
+            "request"   : [],
             "response"  : [["param": "body"], ["param": "success"], ["param": "status"], ["param": "error"]]
         ],
         [
             "route"     : ProfileEndpoint.baseURL + ProfileEndpoint.basic.route,
             "method"    : ProfileEndpoint.basic.method.description,
-            "request"   : [["param": "token"]],
+            "request"   : [],
             "response"  : [["param": "body"], ["param": "success"], ["param": "status"], ["param": "error"]]
         ],
         [
             "route"     : ProfileEndpoint.baseURL + ProfileEndpoint.preview.route,
             "method"    : ProfileEndpoint.preview.method.description,
-            "request"   : [["param": "token"]],
+            "request"   : [],
             "response"  : [["param": "body"], ["param": "success"], ["param": "status"], ["param": "error"]]
         ],
         [
             "route"     : ProfileEndpoint.baseURL + ProfileEndpoint.labels.route,
             "method"    : ProfileEndpoint.labels.method.description,
-            "request"   : [["param": "token"]],
+            "request"   : [],
             "response"  : [["param": "body"], ["param": "success"], ["param": "status"], ["param": "error"]]
         ],
         [
             "route"     : ProfileEndpoint.baseURL + ProfileEndpoint.update.route,
             "method"    : ProfileEndpoint.update.method.description,
-            "request"   : [["param": "token"], ["param": "body"]],
+            "request"   : [["param": "body"]],
             "response"  : [["param": "success"], ["param": "status"], ["param": "error"]]
         ]
     ]
@@ -170,8 +170,7 @@ enum MissionEndpoint: Endpoint {
             "route"     : MissionEndpoint.baseURL + MissionEndpoint.list.route,
             "method"    : MissionEndpoint.list.method.description,
             
-            "request"   : [["param": "token"],
-                           ["param": "lat"],
+            "request"   : [["param": "lat"],
                            ["param": "lng"],
                            ["param": "status"],
                            ["param": "author"],
@@ -188,8 +187,7 @@ enum MissionEndpoint: Endpoint {
             "route"     : MissionEndpoint.baseURL + MissionEndpoint.detail.route,
             "method"    : MissionEndpoint.detail.method.description,
             
-            "request"   : [["param": "token"],
-                           ["param": "id"]],
+            "request"   : [["param": "id"]],
             
             "response"  : [["param": "mission"],
                            ["param": "success"],

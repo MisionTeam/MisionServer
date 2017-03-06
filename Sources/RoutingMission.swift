@@ -27,7 +27,7 @@ struct RoutingMission: RoutesBuilder {
     
     func getMissionList(request: HTTPRequest, response: HTTPResponse) {
         
-        guard let token = request.param(name: "token"), !token.isEmpty else {
+        guard let token = request.token else {
             
             response.accessDenied()
             return
@@ -41,7 +41,7 @@ struct RoutingMission: RoutesBuilder {
     }
     
     func getMissionDetail(request: HTTPRequest, response: HTTPResponse) {
-        guard let token = request.param(name: "token"), !token.isEmpty else {
+        guard let token = request.token else {
             
             response.accessDenied()
             return

@@ -30,7 +30,7 @@ struct RoutingProfile: RoutesBuilder {
     
     
     func getProfileHandler(request: HTTPRequest, response: HTTPResponse) {
-        guard let token = request.param(name: "token"), !token.isEmpty else {
+        guard let token = request.token else {
             
             response.accessDenied()
             return
@@ -45,7 +45,7 @@ struct RoutingProfile: RoutesBuilder {
     
     func getBasicProfileHandler(request: HTTPRequest, response: HTTPResponse) {
         
-        guard let token = request.param(name: "token"), !token.isEmpty else {
+        guard let token = request.token else {
             
             response.accessDenied()
             return
@@ -74,7 +74,7 @@ struct RoutingProfile: RoutesBuilder {
     }
     
     func getPreviewProfileHandler(request: HTTPRequest, response: HTTPResponse) {
-        guard let token = request.param(name: "token"), !token.isEmpty else {
+        guard let token = request.token else {
             
             response.accessDenied()
             return
@@ -103,7 +103,7 @@ struct RoutingProfile: RoutesBuilder {
     }
     
     func getMyLabelsHandler(request: HTTPRequest, response: HTTPResponse) {
-        guard let token = request.param(name: "token"), !token.isEmpty else {
+        guard let token = request.token else {
             
             response.accessDenied()
             return
@@ -124,7 +124,7 @@ struct RoutingProfile: RoutesBuilder {
     }
     
     func profilePostHandler(request: HTTPRequest, response: HTTPResponse) {
-        guard let token = request.param(name: "token"), !token.isEmpty else {
+        guard let token = request.token else {
             
             response.accessDenied()
             return
