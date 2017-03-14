@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E42562F51E6D00DC0078E9ED /* FacebookGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42562F41E6D00DC0078E9ED /* FacebookGraph.swift */; };
 		OBJ_1000 /* cms_cd.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_158 /* cms_cd.c */; };
 		OBJ_1001 /* cms_dd.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_159 /* cms_dd.c */; };
 		OBJ_1002 /* cms_enc.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_160 /* cms_enc.c */; };
@@ -1253,6 +1254,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E42562F41E6D00DC0078E9ED /* FacebookGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookGraph.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Dir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dir.swift; sourceTree = "<group>"; };
 		OBJ_100 /* bn_mul.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mul.c; sourceTree = "<group>"; };
 		OBJ_101 /* bn_nist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_nist.c; sourceTree = "<group>"; };
@@ -3228,6 +3230,7 @@
 				OBJ_816 /* RoutingAuth.swift */,
 				OBJ_817 /* RoutingMission.swift */,
 				OBJ_818 /* RoutingProfile.swift */,
+				E42562F41E6D00DC0078E9ED /* FacebookGraph.swift */,
 				OBJ_819 /* Shared.swift */,
 			);
 			name = MisionServer;
@@ -3855,6 +3858,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				E42562F51E6D00DC0078E9ED /* FacebookGraph.swift in Sources */,
 				OBJ_1798 /* arguments.swift in Sources */,
 				OBJ_1799 /* Endpoint.swift in Sources */,
 				OBJ_1800 /* HTTPRequest+MIS.swift in Sources */,

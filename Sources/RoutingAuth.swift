@@ -8,7 +8,7 @@
 
 import PerfectLib
 import PerfectHTTP
-import TurnstileCrypto
+import Foundation
 
 struct RoutingAuth: RoutesBuilder {
     
@@ -33,12 +33,20 @@ struct RoutingAuth: RoutesBuilder {
             return
         }
         
-        // TODO: check with fb
-        
-        let token = URandom().secureToken
-        let body: [String: Any] = ["token": token]
-    
-        response.sendJSONBodyWithSuccess(json: body)
+        FacebookGraph.verifyUser(token: fbToken) { (fbUserID, error) in
+            if let fb_user_id = fbUserID {
+                
+                // TODO: check out mision user id
+                
+                let tokenString = "mision,\(Date().description)"
+                
+                let body: [String: Any] = ["token": tokenString.encodedToken!]
+                
+                response.sendJSONBodyWithSuccess(json: body)
+            }
+            
+            response.accessDenied()
+        }
     }
     
     func logoutHandler(request: HTTPRequest, response: HTTPResponse) {
