@@ -90,4 +90,14 @@ extension HTTPResponse {
     private func generateErrorWith(status: Status) -> [String: Any] {
         return ["success": false, "status": status.rawValue, "error": status.description]
     }
+    
+    func handleOptions(request: HTTPRequest) {
+        setHeader(.accessControlAllowOrigin, value: "*")
+        setHeader(.accessControlAllowMethods, value: "GET, POST, OPTIONS, DELETE, PUT")
+        setHeader(.accessControlMaxAge, value: "10")
+        setHeader(.accessControlAllowCredentials, value: "true")
+        setHeader(.accessControlAllowHeaders, value: "Origin, Content-Type, Accept, Authorization")
+        
+        completed()
+    }
 }

@@ -35,12 +35,21 @@ struct RoutingAuth: RoutesBuilder {
         
         FacebookGraph.verifyUser(token: fbToken) { (fbUserID, error) in
             if let fb_user_id = fbUserID {
+        
+                let body: [String: Any]
                 
-                // TODO: check out mision user id
-                
-                let tokenString = "mision,\(Date().description)"
-                
-                let body: [String: Any] = ["token": tokenString.encodedToken!]
+                if let user = UserFactory.findUserBy(facebookID: fbToken) {
+                    
+                    let tokenString = "mision,\(user.id),\(Date().description)"
+                    
+                    body = ["token": tokenString.encodedToken!,
+                            "is_new_user": false]
+                    
+                    // TODO: create session
+                    
+                } else {
+                    body = ["is_new_user": true]
+                }
                 
                 response.sendJSONBodyWithSuccess(json: body)
             }
