@@ -27,4 +27,23 @@ extension String {
         
         return String(data: data, encoding: .utf8)
     }
+    
+    var toInt: Int? {
+        return Int(self)
+    }
+    
+    var toBool: Bool? {
+        switch self {
+        case "true", "yes", "1":
+            return true
+        case "false", "no", "0":
+            return false
+        default:
+            return nil
+        }
+    }
+    
+    var toDouble: Double? {
+        return Double(self)
+    }
 }

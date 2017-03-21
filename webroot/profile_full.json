@@ -4,7 +4,7 @@
       "firstName":"Tom",
       "lastName":"Hardy",
       "gender":"male",
-      "age":30,
+      "birthday":"1987-01-01",
       "email":"hello@testting.com",
       "phone":6479999999,
       "avatar":null,

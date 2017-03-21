@@ -21,6 +21,17 @@ import PerfectLib
 import PerfectHTTP
 import PerfectHTTPServer
 
+DatabaseHelper.initDatabase(enviroment: .qa)
+
+UserFactory.create(userInfo: ["id": 1053,
+                              "firstName":"Tom",
+                              "lastName":"Hardy",
+                              "gender":"male",
+                              "birthday":"1987-01-01",
+                              "email":"hello@testting.com",
+                              "phone":6479999999,
+                              "hasCar":false], facebookID: 1001)
+
 // Create HTTP server.
 let server = HTTPServer()
 
@@ -40,6 +51,10 @@ let subRoutes: [RoutesBuilder] = [RoutingAPI(),
                                   RoutingMission()]
 
 subRoutes.forEach { routes.add($0.routes) }
+
+routes.add(method: .options, uri: "/**") { (request, response) in
+    response.handleOptions(request: request)
+}
 
 // Add the routes to the server.
 server.addRoutes(routes)

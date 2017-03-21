@@ -20,7 +20,7 @@ struct FacebookGraph {
     struct Console {
         static let debug_URL = "https://graph.facebook.com/debug_token?%@=%@&%@=%@"
         
-        static let app_token = "225472567917925|61bFzVbSNMH7K9y_fzKj1_2sSQY"
+        static let app_token = "899888736779528%7Clz8uz_Y_fybXNVE0PesGVygxTsA"
         
         static let input_token_key = "input_token"
         
@@ -32,6 +32,7 @@ struct FacebookGraph {
         let urlString = String(format: Console.debug_URL, Console.input_token_key, token, Console.access_token_key, Console.app_token)
         
         var request = URLRequest(url: URL(string: urlString)!)
+        
         request.httpMethod = "GET"
         
         URLSession.shared.dataTask(with: request) { (data, response, error) in
@@ -39,7 +40,7 @@ struct FacebookGraph {
                 do {
                     if let jsonObject = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
                         
-                        if let userID = jsonObject["user_id"] as? String {
+                        if let userID = (jsonObject["data"] as? [String: Any])?["user_id"] as? String {
                             completion(userID, nil)
                         } else {
                             completion(nil, ReturnError.invalid)
@@ -53,6 +54,6 @@ struct FacebookGraph {
                     completion(nil, error)
                 }
             }
-        }
+        }.resume()
     }
 }
