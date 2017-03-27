@@ -16,11 +16,14 @@ struct DatabaseHelper {
         enum Enviroment {
             case qa
             case production
+            case local
             
             var host: String {
                 switch self {
-                case .qa:
+                case .local:
                     return "127.0.0.1"
+                case .qa:
+                    return "misiondb.cr3gpv6vckr6.ca-central-1.rds.amazonaws.com"
                 case .production:
                     return "misiondb.cr3gpv6vckr6.ca-central-1.rds.amazonaws.com"
                 }
@@ -28,6 +31,8 @@ struct DatabaseHelper {
             
             var database: String {
                 switch self {
+                case .local:
+                    return "mision_db"
                 case .qa:
                     return "mision_db_qa"
                 case .production:
