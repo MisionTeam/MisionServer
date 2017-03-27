@@ -35,7 +35,7 @@ class User: MySQLStORM {
 //    var labels: [Label]?
     
     override func table() -> String {
-        return "users"
+        return "user"
     }
     
     override func to(_ this: StORMRow) {

@@ -15,7 +15,7 @@ class Label: MySQLStORM {
     var label: String?
     
     override func table() -> String {
-        return "labels"
+        return "label"
     }
     
     override func to(_ this: StORMRow) {
