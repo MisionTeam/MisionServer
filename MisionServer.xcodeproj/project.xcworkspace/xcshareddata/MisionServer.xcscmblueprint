@@ -11,6 +11,7 @@
     "DCD994A20FFF69E73D7DE28EB512BBF004934554" : 9223372036854775807,
     "199D4B97CF6C0E649E25DCCE805DF00457D5AD8C" : 9223372036854775807,
     "735A06A83BD3E78D8C3B53C09F33A6FB7CEBF8E1" : 9223372036854775807,
+    "ED066A5AB5C5F1649AE7BC18D4E71F8E27293775" : 9223372036854775807,
     "3B905509A4DD1F5305D27EF37A9F71F239F93941" : 9223372036854775807,
     "9197B75B1BC29921D6E3B1CCDC2B258350009F3A" : 9223372036854775807,
     "C4127C9B9C8FDF608B532AD72407863CE2797629" : 9223372036854775807,
@@ -26,6 +27,7 @@
     "DCD994A20FFF69E73D7DE28EB512BBF004934554" : "mision_backend\/Packages\/COpenSSL-2.0.4\/",
     "199D4B97CF6C0E649E25DCCE805DF00457D5AD8C" : "mision_backend\/",
     "735A06A83BD3E78D8C3B53C09F33A6FB7CEBF8E1" : "mision_backend\/Packages\/PerfectLogger-1.0.0\/",
+    "ED066A5AB5C5F1649AE7BC18D4E71F8E27293775" : "mision_backend\/Packages\/PerfectSession-1.1.16\/",
     "3B905509A4DD1F5305D27EF37A9F71F239F93941" : "MisionServer\/Packages\/PerfectCURL-2.0.4\/",
     "9197B75B1BC29921D6E3B1CCDC2B258350009F3A" : "mision_backend\/Packages\/PerfectHTTP-2.1.8\/",
     "C4127C9B9C8FDF608B532AD72407863CE2797629" : "MisionServer\/Packages\/PerfectHTTPServer-2.1.14\/",
@@ -95,6 +97,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PerfectlySoft\/PerfectLib.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E2306DAE0C98D148736A05084B6FAB44F03B4909"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PerfectlySoft\/Perfect-Session.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ED066A5AB5C5F1649AE7BC18D4E71F8E27293775"
     }
   ]
 }

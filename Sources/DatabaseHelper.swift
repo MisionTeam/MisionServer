@@ -9,6 +9,13 @@
 import Foundation
 import MySQLStORM
 
+enum DatabaseException: Error {
+    case create
+    case update
+    case delete
+    case query
+}
+
 struct DatabaseHelper {
     
     struct MySQLConsole {

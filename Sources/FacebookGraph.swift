@@ -9,6 +9,7 @@
 import Foundation
 
 typealias UserHandler = (String?, Error?) -> Void
+typealias ProfileHandler = ([String: Any]?, Error?) -> Void
 
 struct FacebookGraph {
     
@@ -18,7 +19,8 @@ struct FacebookGraph {
     }
     
     struct Console {
-        static let debug_URL = "https://graph.facebook.com/debug_token?%@=%@&%@=%@"
+        static let debug_URL = "https://graph.facebook.com/debug_token?"
+        static let graph_URL = "https://graph.facebook.com/v2.8/me?fields=email,last_name,first_name,gender,birthday,picture.type(large)&access_token="
         
         static let app_token = "899888736779528%7Clz8uz_Y_fybXNVE0PesGVygxTsA"
         
@@ -27,9 +29,9 @@ struct FacebookGraph {
         static let access_token_key = "access_token"
     }
     
-    static func verifyUser(token: String, completion: @escaping UserHandler) {
+    static func verifyUser(facebook_token: String, completion: @escaping UserHandler) {
         
-        let urlString = String(format: Console.debug_URL, Console.input_token_key, token, Console.access_token_key, Console.app_token)
+        let urlString = "\(Console.debug_URL)\(Console.input_token_key)=\(facebook_token)&\(Console.access_token_key)=\(Console.app_token)"
         
         var request = URLRequest(url: URL(string: urlString)!)
         
@@ -56,4 +58,32 @@ struct FacebookGraph {
             }
         }.resume()
     }
+    
+    static func fetchUserProfile(access_token: String, completion: @escaping ProfileHandler) {
+        
+        let urlString = "\(Console.graph_URL)\(access_token)"
+        
+        var request = URLRequest(url: URL(string: urlString)!)
+        
+        request.httpMethod = "GET"
+        
+        URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if let data = data, error == nil {
+                do {
+                    if let jsonObject = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
+                        
+                        completion(jsonObject, nil)
+                        
+                    } else {
+                        completion(nil, ReturnError.parsing)
+                    }
+                    
+                } catch {
+                    completion(nil, error)
+                }
+            }
+        }.resume()
+    }
+    
+    
 }

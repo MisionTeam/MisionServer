@@ -27,34 +27,48 @@ struct RoutingAuth: RoutesBuilder {
     
     
     func fbLoginHandler(request: HTTPRequest, response: HTTPResponse) {
-        guard let fbToken = request.param(name: "fb_token"), !fbToken.isEmpty else {
+        guard let facebook_token = request.param(name: "fb_token"), !facebook_token.isEmpty else {
             
             response.missing(field: "fb_token")
             return
         }
         
-        FacebookGraph.verifyUser(token: fbToken) { (fbUserID, error) in
+        FacebookGraph.verifyUser(facebook_token: facebook_token) { (fbUserID, error) in
             if let fb_user_id = fbUserID {
-        
-                let body: [String: Any]
                 
-                if let user = UserFactory.findUserBy(facebookID: fbToken) {
+                if let user = UserFactory.findUserBy(facebookID: fb_user_id) {
                     
                     let tokenString = "mision,\(user.id),\(Date().description)"
                     
-                    body = ["token": tokenString.encodedToken!,
-                            "is_new_user": false]
+                    let body: [String: Any] = ["token": tokenString.encodedToken!]
                     
                     // TODO: create session
+                    response.sendJSONBodyWithSuccess(json: body)
                     
                 } else {
-                    body = ["is_new_user": true]
+                    
+                    FacebookGraph.fetchUserProfile(access_token: facebook_token) { (profile, error) in
+                        guard let profile = profile, error == nil else {
+                            response.accessDenied()
+                            return
+                        }
+                        
+                        do {
+                            if let user = try UserFactory.create(userInfo: profile) {
+                                let tokenString = "mision,\(user.id),\(Date().description)"
+                                
+                                let body: [String: Any] = ["token": tokenString.encodedToken!]
+                                
+                                response.sendJSONBodyWithSuccess(json: body)
+                            }
+                        } catch {
+                            response.internalError()
+                        }
+                    }
                 }
-                
-                response.sendJSONBodyWithSuccess(json: body)
+            } else {
+                response.accessDenied()
             }
-            
-            response.accessDenied()
         }
     }
     

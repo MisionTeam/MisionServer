@@ -71,6 +71,10 @@ extension HTTPResponse {
         sendJSONBody(json: generateErrorWith(status: .accessDenied))
     }
     
+    func internalError() {
+        sendJSONBody(json: generateErrorWith(status: .internalError))
+    }
+    
     func missing(field: String) {
         
         let body: [String: Any] = ["success": false, "status": Status.missingField.rawValue, "error": Status.missingField.description + " (\"\(field)\")"]
@@ -89,15 +93,5 @@ extension HTTPResponse {
     
     private func generateErrorWith(status: Status) -> [String: Any] {
         return ["success": false, "status": status.rawValue, "error": status.description]
-    }
-    
-    func handleOptions(request: HTTPRequest) {
-        setHeader(.accessControlAllowOrigin, value: "*")
-        setHeader(.accessControlAllowMethods, value: "GET, POST, OPTIONS, DELETE, PUT")
-        setHeader(.accessControlMaxAge, value: "10")
-        setHeader(.accessControlAllowCredentials, value: "true")
-        setHeader(.accessControlAllowHeaders, value: "Origin, Content-Type, Accept, Authorization")
-        
-        completed()
     }
 }
