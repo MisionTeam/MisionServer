@@ -7,15 +7,17 @@
 //
 
 import Foundation
-import MySQLStORM
+import MongoDBStORM
 import StORM
 
-class Label: MySQLStORM {
+class Label: MongoDBStORM {
     var id: String = ""
     var label: String?
     
-    override func table() -> String {
-        return "label"
+    override init() {
+        super.init()
+        
+        _collection = "label"
     }
     
     override func to(_ this: StORMRow) {

@@ -9,6 +9,7 @@
 import PerfectLib
 import PerfectHTTP
 import Foundation
+import PerfectLogger
 
 struct RoutingAuth: RoutesBuilder {
     
@@ -33,6 +34,15 @@ struct RoutingAuth: RoutesBuilder {
             return
         }
         
+        func loginWith(token: String) {
+            let body: [String: Any] = ["token": token.encodedToken!]
+            
+            // TODO: create session
+            response.sendJSONBodyWithSuccess(json: body)
+            
+            LogFile.info("Login success!")
+        }
+        
         FacebookGraph.verifyUser(facebook_token: facebook_token) { (fbUserID, error) in
             if let fb_user_id = fbUserID {
                 
@@ -40,10 +50,7 @@ struct RoutingAuth: RoutesBuilder {
                     
                     let tokenString = "mision,\(user.id),\(Date().description)"
                     
-                    let body: [String: Any] = ["token": tokenString.encodedToken!]
-                    
-                    // TODO: create session
-                    response.sendJSONBodyWithSuccess(json: body)
+                    loginWith(token: tokenString)
                     
                 } else {
                     
@@ -57,9 +64,7 @@ struct RoutingAuth: RoutesBuilder {
                             if let user = try UserFactory.create(userInfo: profile) {
                                 let tokenString = "mision,\(user.id),\(Date().description)"
                                 
-                                let body: [String: Any] = ["token": tokenString.encodedToken!]
-                                
-                                response.sendJSONBodyWithSuccess(json: body)
+                                loginWith(token: tokenString)
                             }
                         } catch {
                             response.internalError()

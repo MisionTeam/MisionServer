@@ -16,6 +16,7 @@ struct FacebookGraph {
     enum ReturnError: Error {
         case parsing
         case invalid
+        case expired
     }
     
     struct Console {
@@ -72,7 +73,11 @@ struct FacebookGraph {
                 do {
                     if let jsonObject = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
                         
-                        completion(jsonObject, nil)
+                        if let _ = jsonObject["error"] {
+                            completion(nil, ReturnError.expired)
+                        } else {
+                            completion(jsonObject, nil)
+                        }
                         
                     } else {
                         completion(nil, ReturnError.parsing)

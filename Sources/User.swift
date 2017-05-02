@@ -7,14 +7,14 @@
 //
 
 import Foundation
-import MySQLStORM
+import MongoDBStORM
 import StORM
 
-class User: MySQLStORM {
+class User: MongoDBStORM {
     
     // MARK: - Required
-    var id: Int = 0
-    var facebook_id: Int = 0
+    var id: String = ""
+    var facebook_id: String = ""
     var first_name: String = ""
     var last_name: String = ""
     var gender: String = ""
@@ -32,17 +32,18 @@ class User: MySQLStORM {
     var city: String = ""
     var street: String = ""
     var postal_code: String = ""
-//    var labels: [Label]?
     
-    override func table() -> String {
-        return "user"
+    override init() {
+        super.init()
+        
+        _collection = "user"
     }
     
     override func to(_ this: StORMRow) {
-        id          = this.data["id"] as? Int ?? 0
-        facebook_id = this.data["facebook_id"] as? Int ?? 0
-        first_name  = this.data["first_name"] as? String ?? ""
-        last_name   = this.data["last_name"] as? String ?? ""
+        id          = this.data["_id"] as? String ?? ""
+        facebook_id = this.data["facebook_id"] as? String ?? ""
+        first_name  = this.data["firstname"] as? String ?? ""
+        last_name   = this.data["lastname"] as? String ?? ""
         gender      = this.data["gender"] as? String ?? ""
         birthday    = this.data["birthday"] as? String ?? ""
         email       = this.data["email"] as? String ?? ""
@@ -57,15 +58,6 @@ class User: MySQLStORM {
         city        = this.data["city"] as? String ?? ""
         street      = this.data["street"] as? String ?? ""
         postal_code = this.data["postal_code"] as? String ?? ""
-        
-//        if let labelRows = try? sqlRows("select * from labels where id = (select label_id from users_labels where user_id = ?)", params: ["\(id)"]) {
-//            
-//            labels = labelRows.map {
-//                let label = Label()
-//                label.to($0)
-//                return label
-//            }
-//        }
     }
     
     func rows() -> [User] {

@@ -22,7 +22,7 @@ import PerfectHTTP
 import PerfectHTTPServer
 import PerfectSession
 
-DatabaseHelper.initDatabase(enviroment: .local)
+DatabaseHelper.initDatabase(environment: .local)
 
 SessionConfig.CORS.enabled = true
 SessionConfig.CORS.acceptableHostnames = ["*"]

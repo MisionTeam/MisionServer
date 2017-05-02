@@ -22,7 +22,7 @@ enum Status: Int, CustomStringConvertible {
         switch self {
         case .success: return "Success"
         case .decodeError: return "JSON format error"
-        case .accessDenied: return "Access denied or bad access token"
+        case .accessDenied: return "Access denied or access token expired"
         case .missingField: return "Missing field"
         case .notFound : return "Target file not found"
         case .internalError: return "Internal Error"

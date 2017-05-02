@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import PerfectLogger
 
 struct UserFactory {
     
@@ -16,21 +17,24 @@ struct UserFactory {
         do {
             try user.find(["facebook_id": facebookID])
         } catch {
-            print("find user by facebook failed: \(error.localizedDescription)")
+            LogFile.error("User query by facebook failed: \(error.localizedDescription)")
+            
             return nil
         }
         
-        return user.id > 0 ? user : nil
+        return user.id.isEmpty ? nil : user
     }
     
     static func create(userInfo: [String: Any]) throws -> User? {
         
-        guard let facebook_id = userInfo["id"] as? Int else {
+        guard let facebook_id = userInfo["id"] as? String else {
+            LogFile.error("Can not find user facebook id!")
+            
             throw DatabaseException.create
         }
         
-        let newUser = User()
-        
+        let newUser         = User()
+        newUser.id          = newUser.newUUID()
         newUser.facebook_id = facebook_id
         newUser.first_name  = userInfo["first_name"] as? String ?? ""
         newUser.last_name   = userInfo["last_name"] as? String ?? ""
@@ -43,11 +47,12 @@ struct UserFactory {
         newUser.avatar      = ((userInfo["picture"] as? [String: Any])?["data"] as? [String: Any])?["url"] as? String ?? ""
         
         do {
-            try newUser.save { newUser.id = $0 as! Int }
+            try newUser.save()
             
             return newUser
         } catch {
-            print("create new user fialed: \(error.localizedDescription)")
+            LogFile.error("New user create fialed: \(error.localizedDescription)")
+            
             throw error
         }
     }
