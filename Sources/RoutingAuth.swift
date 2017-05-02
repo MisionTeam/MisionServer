@@ -48,7 +48,7 @@ struct RoutingAuth: RoutesBuilder {
                 
                 if let user = UserFactory.findUserBy(facebookID: fb_user_id) {
                     
-                    let tokenString = "mision,\(user.id),\(Date().description)"
+                    let tokenString = "mision,\(user._id),\(Date().description)"
                     
                     loginWith(token: tokenString)
                     
@@ -62,7 +62,7 @@ struct RoutingAuth: RoutesBuilder {
                         
                         do {
                             if let user = try UserFactory.create(userInfo: profile) {
-                                let tokenString = "mision,\(user.id),\(Date().description)"
+                                let tokenString = "mision,\(user._id),\(Date().description)"
                                 
                                 loginWith(token: tokenString)
                             }

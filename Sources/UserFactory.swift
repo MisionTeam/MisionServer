@@ -22,7 +22,21 @@ struct UserFactory {
             return nil
         }
         
-        return user.id.isEmpty ? nil : user
+        return user._id.isEmpty ? nil : user
+    }
+    
+    static func findUserBy(id: String) -> User? {
+        let user = User()
+        
+        do {
+            try user.get(id)
+        } catch {
+            LogFile.error("User query by id failed: \(error.localizedDescription)")
+            
+            return nil
+        }
+        
+        return user
     }
     
     static func create(userInfo: [String: Any]) throws -> User? {
@@ -34,7 +48,7 @@ struct UserFactory {
         }
         
         let newUser         = User()
-        newUser.id          = newUser.newUUID()
+        newUser._id         = newUser.newUUID()
         newUser.facebook_id = facebook_id
         newUser.first_name  = userInfo["first_name"] as? String ?? ""
         newUser.last_name   = userInfo["last_name"] as? String ?? ""

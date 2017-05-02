@@ -12,8 +12,12 @@ import StORM
 
 class User: MongoDBStORM {
     
+    struct Profile {
+        static let basicFields: Set<String> = ["first_name", "last_name", "email"]
+        static let requiredFields: Set<String> = ["first_name", "last_name", "email", "birthday", "gender"]
+    }
     // MARK: - Required
-    var id: String = ""
+    var _id: String = ""
     var facebook_id: String = ""
     var first_name: String = ""
     var last_name: String = ""
@@ -40,10 +44,10 @@ class User: MongoDBStORM {
     }
     
     override func to(_ this: StORMRow) {
-        id          = this.data["_id"] as? String ?? ""
+        _id         = this.data["_id"] as? String ?? ""
         facebook_id = this.data["facebook_id"] as? String ?? ""
-        first_name  = this.data["firstname"] as? String ?? ""
-        last_name   = this.data["lastname"] as? String ?? ""
+        first_name  = this.data["first_name"] as? String ?? ""
+        last_name   = this.data["last_name"] as? String ?? ""
         gender      = this.data["gender"] as? String ?? ""
         birthday    = this.data["birthday"] as? String ?? ""
         email       = this.data["email"] as? String ?? ""
@@ -70,5 +74,74 @@ class User: MongoDBStORM {
             rows.append(row)
         }
         return rows
+    }
+    
+    func updateWith(profile: [String: Any]) throws {
+        
+        if let firstName = profile["first_name"] as? String, !firstName.isEmpty {
+            first_name = firstName
+        }
+        
+        if let lastName = profile["last_name"] as? String, !lastName.isEmpty {
+            last_name = lastName
+        }
+        
+        if let gender = profile["gender"] as? String, !gender.isEmpty {
+            self.gender = gender
+        }
+        
+        if let birthday = profile["birthday"] as? String, !birthday.isEmpty {
+            self.birthday = birthday
+        }
+        
+        if let email = profile["email"] as? String, !email.isEmpty {
+            self.email = email
+        }
+        
+        if let phone = profile["phone"] as? String, !phone.isEmpty {
+            self.phone = email
+        }
+        
+        if let avatar = profile["avatar"] as? String, !avatar.isEmpty {
+            self.avatar = avatar
+        }
+        
+        if let job = profile["job"] as? String, !job.isEmpty {
+            self.job = job
+        }
+        
+        if let has_car = profile["has_car"] as? Int {
+            self.has_car = has_car
+        }
+        
+        if let lat = profile["lat"] as? Double {
+            self.lat = lat
+        }
+        
+        if let lng = profile["lng"] as? Double {
+            self.lng = lng
+        }
+        
+        if let country = profile["country"] as? String, !country.isEmpty {
+            self.country = country
+        }
+        
+        if let state = profile["state"] as? String, !state.isEmpty {
+            self.state = state
+        }
+        
+        if let city = profile["city"] as? String, !city.isEmpty {
+            self.city = city
+        }
+        
+        if let street = profile["street"] as? String, !street.isEmpty {
+            self.street = street
+        }
+        
+        if let postal_code = profile["postal_code"] as? String, !postal_code.isEmpty {
+            self.postal_code = postal_code
+        }
+        
+        try save()
     }
 }

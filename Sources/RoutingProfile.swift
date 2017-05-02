@@ -8,6 +8,7 @@
 
 import PerfectLib
 import PerfectHTTP
+import PerfectLogger
 
 struct RoutingProfile: RoutesBuilder {
     
@@ -23,20 +24,20 @@ struct RoutingProfile: RoutesBuilder {
         routes.add(method: ProfileEndpoint.full.method, uri: ProfileEndpoint.full.route, handler: getProfileHandler)
         routes.add(method: ProfileEndpoint.basic.method, uri: ProfileEndpoint.basic.route, handler: getBasicProfileHandler)
         routes.add(method: ProfileEndpoint.preview.method, uri: ProfileEndpoint.preview.route, handler: getPreviewProfileHandler)
-        routes.add(method: ProfileEndpoint.labels.method, uri: ProfileEndpoint.labels.route, handler: getMyLabelsHandler)
+//        routes.add(method: ProfileEndpoint.labels.method, uri: ProfileEndpoint.labels.route, handler: getMyLabelsHandler)
         routes.add(method: ProfileEndpoint.update.method, uri: ProfileEndpoint.update.route, handler: profilePostHandler)
     }
     
     
     func getProfileHandler(request: HTTPRequest, response: HTTPResponse) {
-        guard let token = request.token else {
+        guard let token = request.token?.decodedString else {
             
             response.accessDenied()
             return
         }
         
-        if let localProfile = loadLocalProfile() {
-            response.sendJSONBodyWithSuccess(json: localProfile)
+        if let profile = findUserBy(decodedToken: token)?.asDataDict() {
+            response.sendJSONBodyWithSuccess(json: ["user": profile])
         } else {
             response.notFound()
         }
@@ -44,24 +45,18 @@ struct RoutingProfile: RoutesBuilder {
     
     func getBasicProfileHandler(request: HTTPRequest, response: HTTPResponse) {
         
-        guard let token = request.token else {
+        guard let token = request.token?.decodedString else {
             
             response.accessDenied()
             return
         }
         
-        struct BasicFields {
-            static let firstName = "firstName"
-            static let lastName = "lastName"
-            static let email = "email"
-        }
-        
-        if let localProfile = loadLocalProfile()?["user"] as? [String: Any] {
+        if let profile = findUserBy(decodedToken: token)?.asDataDict() {
             
             var basicProfile = [String: Any]()
                 
-            for (k, v) in localProfile {
-                if k == BasicFields.firstName || k == BasicFields.lastName || k == BasicFields.email {
+            for (k, v) in profile {
+                if User.Profile.basicFields.contains(k) {
                     basicProfile[k] = v
                 }
             }
@@ -73,24 +68,18 @@ struct RoutingProfile: RoutesBuilder {
     }
     
     func getPreviewProfileHandler(request: HTTPRequest, response: HTTPResponse) {
-        guard let token = request.token else {
+        guard let token = request.token?.decodedString else {
             
             response.accessDenied()
             return
         }
         
-        struct PreviewFields {
-            static let firstName = "firstName"
-            static let lastName = "lastName"
-            static let email = "email"
-        }
-        
-        if let localProfile = loadLocalProfile()?["user"] as? [String: Any] {
+        if let profile = findUserBy(decodedToken: token)?.asDataDict() {
             
             var previewProfile = [String: Any]()
             
-            for (k, v) in localProfile {
-                if k == PreviewFields.firstName || k == PreviewFields.lastName || k == PreviewFields.email {
+            for (k, v) in profile {
+                if User.Profile.basicFields.contains(k) {
                     previewProfile[k] = v
                 }
             }
@@ -123,29 +112,36 @@ struct RoutingProfile: RoutesBuilder {
     }
     
     func profilePostHandler(request: HTTPRequest, response: HTTPResponse) {
-        guard let token = request.token else {
+        guard let token = request.token?.decodedString else {
             
             response.accessDenied()
             return
         }
         
-        guard let profileString = request.param(name: "user") else {
+        guard let updateString = request.param(name: "user") else {
             response.missing(field: "user")
             return
         }
         
-        guard let profile = (try? profileString.jsonDecode()) as? [String: Any] else {
+        guard let update = (try? updateString.jsonDecode()) as? [String: Any] else {
             response.decodeError()
             return
         }
-        
-        let validation = check(profile: profile)
-        
-        if validation.valid {
-            response.sendJSONBodyWithSuccess(json: nil)
-        } else {
-            response.missing(field: validation.missing)
+            
+        if let user = findUserBy(decodedToken: token) {
+            
+            do {
+                try user.updateWith(profile: update)
+            } catch {
+                LogFile.error("Profile update failed!")
+                
+                response.internalError()
+                
+                return
+            }
         }
+        
+        response.sendJSONBodyWithSuccess(json: nil)
     }
     
     private func loadLocalProfile() -> [String: Any]? {
@@ -162,34 +158,25 @@ struct RoutingProfile: RoutesBuilder {
     
     private func check(profile: [String: Any]) -> (valid: Bool, missing: String) {
         
-        struct Required {
-            static let gender = "gender"
-            static let firstName = "firstName"
-            static let lastName = "lastName"
-            static let age = "age"
-            static let email = "email"
-        }
-        
-        guard let _ = profile[Required.gender] else {
-            return (false, Required.gender)
-        }
-        
-        guard let _ = profile[Required.firstName] else {
-            return (false, Required.firstName)
-        }
-        
-        guard let _ = profile[Required.lastName] else {
-            return (false, Required.lastName)
-        }
-        
-        guard let _ = profile[Required.age] else {
-            return (false, Required.age)
-        }
-        
-        guard let _ = profile[Required.email] else {
-            return (false, Required.email)
+        for k in User.Profile.requiredFields {
+            guard let _ = profile[k] else {
+                return (false, k)
+            }
         }
         
         return (true, "")
+    }
+    
+    private func findUserBy(decodedToken: String) -> User? {
+        let tokenComponents = decodedToken.components(separatedBy: ",")
+        
+        guard tokenComponents.count > 2 else {
+            LogFile.error("Token parsing error!")
+            return nil
+        }
+        
+        let userID = tokenComponents[1]
+        
+        return UserFactory.findUserBy(id: userID)
     }
 }
