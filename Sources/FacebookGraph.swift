@@ -6,7 +6,7 @@
 //
 //
 
-import Foundation
+import PerfectCURL
 
 typealias UserHandler = (String?, Error?) -> Void
 typealias ProfileHandler = ([String: Any]?, Error?) -> Void
@@ -34,81 +34,56 @@ struct FacebookGraph {
         
         let urlString = "\(Console.debug_URL)\(Console.input_token_key)=\(facebook_token)&\(Console.access_token_key)=\(Console.app_token)"
         
-        var request = URLRequest(url: URL(string: urlString)!)
+        let curlObject = CURL(url: urlString)
         
-        request.httpMethod = "GET"
-        
-        URLSession.shared.dataTask(with: request) { (data, response, error) in
-            if let data = data, error == nil {
-                do {
-                    if let jsonObject = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
-                        
-                        if let userID = (jsonObject["data"] as? [String: Any])?["user_id"] as? String {
-                            
-                            completion(userID, nil)
-                            
-                            return
-                        }
-                        
-                        completion(nil, ReturnError.invalid)
-                        
-                        return
-                    }
+        curlObject.perform { (code, header, body) in
+            let bodyString = String(bytes: body, encoding: .utf8)
+            
+            if let jsonObject = (try? bodyString?.jsonDecode()) as? [String: Any] {
+                
+                if let userID = (jsonObject["data"] as? [String: Any])?["user_id"] as? String {
                     
-                    completion(nil, ReturnError.parsing)
-                    
-                    return
-                    
-                } catch {
-                    completion(nil, error)
+                    completion(userID, nil)
                     
                     return
                 }
+                
+                completion(nil, ReturnError.invalid)
+                
+                return
             }
             
-            completion(nil, error)
+            completion(nil, ReturnError.parsing)
             
-        }.resume()
+            return
+        }
     }
     
     static func fetchUserProfile(access_token: String, completion: @escaping ProfileHandler) {
         
         let urlString = "\(Console.graph_URL)\(access_token)"
         
-        var request = URLRequest(url: URL(string: urlString)!)
+        let curlObject = CURL(url: urlString)
         
-        request.httpMethod = "GET"
-        
-        URLSession.shared.dataTask(with: request) { (data, response, error) in
-            if let data = data, error == nil {
-                do {
-                    if let jsonObject = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
-                        
-                        if let _ = jsonObject["error"] {
-                            
-                            completion(nil, ReturnError.expired)
-                            
-                            return
-                        }
-                        
-                        completion(jsonObject, nil)
-                        return
-                    }
+        curlObject.perform { (code, header, body) in
+            let bodyString = String(bytes: body, encoding: .utf8)
+            
+            if let jsonObject = (try? bodyString?.jsonDecode()) as? [String: Any] {
+                
+                if let _ = jsonObject["error"] {
                     
-                    completion(nil, ReturnError.parsing)
+                    completion(nil, ReturnError.expired)
                     
-                    return
-                    
-                } catch {
-                    
-                    completion(nil, error)
                     return
                 }
+                
+                completion(jsonObject, nil)
+                return
             }
             
-            completion(nil, error)
-        }.resume()
+            completion(nil, ReturnError.parsing)
+            
+            return
+        }
     }
-    
-    
 }
