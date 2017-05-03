@@ -27,11 +27,11 @@ struct DatabaseHelper {
         var host: String {
             switch self {
             case .local:
-                return "127.0.0.1"
+                return "localhost"
             case .qa:
-                return "misiondb.cr3gpv6vckr6.ca-central-1.rds.amazonaws.com"
+                return "localhost"
             case .production:
-                return "misiondb.cr3gpv6vckr6.ca-central-1.rds.amazonaws.com"
+                return "ec2-52-60-82-23.ca-central-1.compute.amazonaws.com"
             }
         }
         

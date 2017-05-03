@@ -28,6 +28,9 @@ struct RoutingAuth: RoutesBuilder {
     
     
     func fbLoginHandler(request: HTTPRequest, response: HTTPResponse) {
+        
+        LogFile.info("User logging in")
+        
         guard let facebook_token = request.param(name: "fb_token"), !facebook_token.isEmpty else {
             
             response.missing(field: "fb_token")
@@ -44,6 +47,9 @@ struct RoutingAuth: RoutesBuilder {
         }
         
         FacebookGraph.verifyUser(facebook_token: facebook_token) { (fbUserID, error) in
+            
+            LogFile.info("facebook verified, error:\(error?.localizedDescription ?? "")")
+            
             if let fb_user_id = fbUserID {
                 
                 if let user = UserFactory.findUserBy(facebookID: fb_user_id) {
@@ -55,6 +61,9 @@ struct RoutingAuth: RoutesBuilder {
                 } else {
                     
                     FacebookGraph.fetchUserProfile(access_token: facebook_token) { (profile, error) in
+                        
+                        LogFile.info("fb profile fetched, error: \(error?.localizedDescription ?? "")")
+                        
                         guard let profile = profile, error == nil else {
                             response.accessDenied()
                             return

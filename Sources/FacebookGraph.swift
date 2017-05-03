@@ -44,19 +44,30 @@ struct FacebookGraph {
                     if let jsonObject = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
                         
                         if let userID = (jsonObject["data"] as? [String: Any])?["user_id"] as? String {
+                            
                             completion(userID, nil)
-                        } else {
-                            completion(nil, ReturnError.invalid)
+                            
+                            return
                         }
                         
-                    } else {
-                        completion(nil, ReturnError.parsing)
+                        completion(nil, ReturnError.invalid)
+                        
+                        return
                     }
+                    
+                    completion(nil, ReturnError.parsing)
+                    
+                    return
                     
                 } catch {
                     completion(nil, error)
+                    
+                    return
                 }
             }
+            
+            completion(nil, error)
+            
         }.resume()
     }
     
@@ -74,19 +85,28 @@ struct FacebookGraph {
                     if let jsonObject = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
                         
                         if let _ = jsonObject["error"] {
+                            
                             completion(nil, ReturnError.expired)
-                        } else {
-                            completion(jsonObject, nil)
+                            
+                            return
                         }
                         
-                    } else {
-                        completion(nil, ReturnError.parsing)
+                        completion(jsonObject, nil)
+                        return
                     }
                     
+                    completion(nil, ReturnError.parsing)
+                    
+                    return
+                    
                 } catch {
+                    
                     completion(nil, error)
+                    return
                 }
             }
+            
+            completion(nil, error)
         }.resume()
     }
     
