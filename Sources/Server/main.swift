@@ -22,6 +22,8 @@ import PerfectHTTP
 import PerfectHTTPServer
 import PerfectSession
 import PerfectLogger
+import MSDataModel
+import MSRoutes
 
 DatabaseHelper.initDatabase(environment: .qa)
 

@@ -10,16 +10,16 @@ import Foundation
 import MongoDBStORM
 import PerfectLogger
 
-enum DatabaseException: Error {
+public enum DatabaseException: Error {
     case create
     case update
     case delete
     case query
 }
 
-struct DatabaseHelper {
+public struct DatabaseHelper {
         
-    enum Environment {
+    public enum Environment {
         case qa
         case production
         case local
@@ -47,7 +47,7 @@ struct DatabaseHelper {
         }
     }
     
-    static func initDatabase(environment: Environment) {
+    public static func initDatabase(environment: Environment) {
         MongoDBConnection.host      = environment.host
         MongoDBConnection.database  = environment.database
     }

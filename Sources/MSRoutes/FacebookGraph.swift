@@ -54,8 +54,6 @@ struct FacebookGraph {
             }
             
             completion(nil, ReturnError.parsing)
-            
-            return
         }
     }
     
@@ -82,8 +80,6 @@ struct FacebookGraph {
             }
             
             completion(nil, ReturnError.parsing)
-            
-            return
         }
     }
 }

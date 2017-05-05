@@ -10,12 +10,17 @@ import Foundation
 import MongoDBStORM
 import StORM
 
-class User: MongoDBStORM {
+public class User: MongoDBStORM {
     
-    struct Profile {
-        static let basicFields: Set<String> = ["first_name", "last_name", "email"]
-        static let requiredFields: Set<String> = ["first_name", "last_name", "email", "birthday", "gender"]
+    public struct Profile {
+        public static let basicFields: Set<String> = ["first_name", "last_name", "email"]
+        public static let requiredFields: Set<String> = ["first_name", "last_name", "email", "birthday", "gender"]
     }
+    
+    public var id: String {
+        return _id
+    }
+    
     // MARK: - Required
     var _id: String = ""
     var facebook_id: String = ""
@@ -43,7 +48,7 @@ class User: MongoDBStORM {
         _collection = "user"
     }
     
-    override func to(_ this: StORMRow) {
+    override public func to(_ this: StORMRow) {
         _id         = this.data["_id"] as? String ?? ""
         facebook_id = this.data["facebook_id"] as? String ?? ""
         first_name  = this.data["first_name"] as? String ?? ""
@@ -64,7 +69,7 @@ class User: MongoDBStORM {
         postal_code = this.data["postal_code"] as? String ?? ""
     }
     
-    func rows() -> [User] {
+    public func rows() -> [User] {
         
         var rows = [User]()
         
@@ -76,7 +81,7 @@ class User: MongoDBStORM {
         return rows
     }
     
-    func updateWith(profile: [String: Any]) throws {
+    public func updateWith(profile: [String: Any]) throws {
         
         if let firstName = profile["first_name"] as? String, !firstName.isEmpty {
             first_name = firstName

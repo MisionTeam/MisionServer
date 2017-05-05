@@ -3,7 +3,25 @@
 import PackageDescription
 let package = Package(
     name: "MisionServer",
-    
+    targets: [
+        Target(
+            name: "MSDataModel",
+            dependencies: []
+        ),
+        Target(
+            name: "MSRoutes",
+            dependencies: [
+                .Target(name: "MSDataModel")
+            ]
+        ),
+        Target(
+            name: "Server",
+            dependencies: [
+                .Target(name: "MSDataModel"),
+                .Target(name: "MSRoutes")
+            ]
+        )
+    ],
     dependencies: [
         .Package(url: "https://github.com/PerfectlySoft/Perfect-HTTPServer.git", majorVersion: 2),
         .Package(url: "https://github.com/PerfectlySoft/Perfect-MongoDB.git", majorVersion: 2),

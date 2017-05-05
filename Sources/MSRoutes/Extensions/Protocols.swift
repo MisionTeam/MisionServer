@@ -16,6 +16,6 @@ protocol Endpoint {
     static var allEndpoints: [Self] { get }
 }
 
-protocol RoutesBuilder {
+public protocol RoutesBuilder {
     var routes: Routes { get }
 }

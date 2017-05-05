@@ -10,10 +10,10 @@ import PerfectLib
 import PerfectHTTP
 import PerfectMustache
 
-struct RoutingAPI: RoutesBuilder {
-    var routes: Routes
+public struct RoutingAPI: RoutesBuilder {
+    public var routes: Routes
     
-    init() {
+    public init() {
         routes = Routes(baseUri: APIEndpoint.baseURL)
         
         buildRoutes()

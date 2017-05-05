@@ -9,12 +9,13 @@
 import PerfectLib
 import PerfectHTTP
 import PerfectLogger
+import MSDataModel
 
-struct RoutingProfile: RoutesBuilder {
+public struct RoutingProfile: RoutesBuilder {
     
-    var routes: Routes
+    public var routes: Routes
     
-    init() {
+    public init() {
         routes = Routes(baseUri: ProfileEndpoint.baseURL)
         
         buildRoutes()

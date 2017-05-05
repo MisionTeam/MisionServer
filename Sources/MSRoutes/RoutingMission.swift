@@ -9,11 +9,11 @@
 import PerfectLib
 import PerfectHTTP
 
-struct RoutingMission: RoutesBuilder {
+public struct RoutingMission: RoutesBuilder {
     
-    var routes: Routes
+    public var routes: Routes
     
-    init() {
+    public init() {
         
         routes = Routes(baseUri: MissionEndpoint.baseURL)
         

@@ -9,9 +9,9 @@
 import Foundation
 import PerfectLogger
 
-struct UserFactory {
+public struct UserFactory {
     
-    static func findUserBy(facebookID: String) -> User? {
+    public static func findUserBy(facebookID: String) -> User? {
         let user = User()
         
         do {
@@ -22,10 +22,10 @@ struct UserFactory {
             return nil
         }
         
-        return user._id.isEmpty ? nil : user
+        return user.id.isEmpty ? nil : user
     }
     
-    static func findUserBy(id: String) -> User? {
+    public static func findUserBy(id: String) -> User? {
         let user = User()
         
         do {
@@ -39,7 +39,7 @@ struct UserFactory {
         return user
     }
     
-    static func create(userInfo: [String: Any]) throws -> User? {
+    public static func create(userInfo: [String: Any]) throws -> User? {
         
         guard let facebook_id = userInfo["id"] as? String else {
             LogFile.error("Can not find user facebook id!")
