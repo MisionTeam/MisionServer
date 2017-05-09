@@ -6,16 +6,8 @@
 //
 //
 
-import Foundation
 import MongoDBStORM
 import PerfectLogger
-
-public enum DatabaseException: Error {
-    case create
-    case update
-    case delete
-    case query
-}
 
 public struct DatabaseHelper {
         

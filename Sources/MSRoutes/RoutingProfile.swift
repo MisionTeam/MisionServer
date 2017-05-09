@@ -129,22 +129,50 @@ public struct RoutingProfile: RoutesBuilder {
             return
         }
             
-        if let user = findUserBy(decodedToken: token) {
+        guard let _ = updateUser(decodedToken: token, profile: update) else {
+            response.internalError()
             
-            do {
-                try user.updateWith(profile: update)
-            } catch {
-                LogFile.error("Profile update failed!")
-                
-                response.internalError()
-                
-                return
-            }
+            return
         }
         
         response.sendJSONBodyWithSuccess(json: nil)
     }
     
+    private func findUserBy(decodedToken: String) -> User? {
+        
+        guard let userID = userIDFrom(decodedToken: decodedToken) else {
+            return nil
+        }
+        
+        return UserFactory.findUserBy(id: userID)
+    }
+    
+    private func updateUser(decodedToken: String, profile: [String: Any]) -> User? {
+        
+        guard let userID = userIDFrom(decodedToken: decodedToken) else {
+            return nil
+        }
+        
+        return UserFactory.update(userID: userID, with: profile)
+    }
+    
+    private func userIDFrom(decodedToken: String) -> String? {
+        let tokenComponents = decodedToken.components(separatedBy: ",")
+        
+        guard tokenComponents.count > 2 else {
+            LogFile.error("Token parsing error!")
+            return nil
+        }
+        
+        guard tokenComponents.first == "mision" else {
+            LogFile.error("Token format error!")
+            return nil
+        }
+        
+        return tokenComponents[1]
+    }
+    
+    //MARK: mock data
     private func loadLocalProfile() -> [String: Any]? {
         let profileFile = File("./webroot/profile_full.json")
         
@@ -166,18 +194,5 @@ public struct RoutingProfile: RoutesBuilder {
         }
         
         return (true, "")
-    }
-    
-    private func findUserBy(decodedToken: String) -> User? {
-        let tokenComponents = decodedToken.components(separatedBy: ",")
-        
-        guard tokenComponents.count > 2 else {
-            LogFile.error("Token parsing error!")
-            return nil
-        }
-        
-        let userID = tokenComponents[1]
-        
-        return UserFactory.findUserBy(id: userID)
     }
 }
