@@ -15,7 +15,7 @@ let package = Package(
             ]
         ),
         Target(
-            name: "Server",
+            name: "MisionServer",
             dependencies: [
                 .Target(name: "MSDataModel"),
                 .Target(name: "MSRoutes")
