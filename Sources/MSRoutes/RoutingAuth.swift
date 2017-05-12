@@ -38,8 +38,8 @@ public struct RoutingAuth: RoutesBuilder {
             return
         }
         
-        func loginWith(token: String) {
-            let body: [String: Any] = ["token": token.encodedToken!]
+        func loginWith(userID: String) {
+            let body: [String: Any] = ["token": userID.toToken!]
             
             // TODO: create session
             response.sendJSONBodyWithSuccess(json: body)
@@ -51,38 +51,33 @@ public struct RoutingAuth: RoutesBuilder {
             
             LogFile.info("facebook verified, error:\(error?.localizedDescription ?? "")")
             
-            if let fb_user_id = fbUserID {
-                
-                if let user = UserFactory.findUserBy(facebookID: fb_user_id) {
-                    
-                    let tokenString = "mision,\(user.identifier),\(Date().description)"
-                    
-                    loginWith(token: tokenString)
-                    
-                } else {
-                    
-                    FacebookGraph.fetchUserProfile(access_token: facebook_token) { (profile, error) in
-                        
-                        LogFile.info("fb profile fetched, error: \(error?.localizedDescription ?? "")")
-                        
-                        guard let profile = profile, error == nil else {
-                            response.accessDenied()
-                            return
-                        }
-                        
-                        do {
-                            if let user = UserFactory.create(userInfo: profile) {
-                                let tokenString = "mision,\(user.identifier),\(Date().description)"
-                                
-                                loginWith(token: tokenString)
-                            }
-                        } catch {
-                            response.internalError()
-                        }
-                    }
-                }
-            } else {
+            guard let fb_user_id = fbUserID else {
                 response.accessDenied()
+                return
+            }
+            
+            if let user = UserFactory.findUserBy(facebookID: fb_user_id) {
+                
+                loginWith(userID: user.identifier)
+                
+            } else {
+                
+                FacebookGraph.fetchUserProfile(access_token: facebook_token) { (profile, error) in
+                    
+                    LogFile.info("fb profile fetched, error: \(error?.localizedDescription ?? "")")
+                    
+                    guard let profile = profile, error == nil else {
+                        response.accessDenied()
+                        return
+                    }
+                    
+                    guard let user = UserFactory.create(userInfo: profile) else{
+                        response.internalError()
+                        return
+                    }
+                    
+                    loginWith(userID: user.identifier)
+                }
             }
         }
     }

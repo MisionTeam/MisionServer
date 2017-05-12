@@ -16,16 +16,33 @@ enum ContentType: String {
 
 extension String {
     
-    var encodedToken: String? {
-        return self.data(using: .utf8)?.base64EncodedString()
+    var toToken: String? {
+        
+        let tokenString = "mision,\(self),\(Date().description)"
+        
+        return tokenString.data(using: .utf8)?.base64EncodedString()
     }
     
-    var decodedString: String? {
+    var toUserID: String? {
         guard let data = Data(base64Encoded: self) else {
             return nil
         }
         
-        return String(data: data, encoding: .utf8)
+        guard let tokenString = String(data: data, encoding: .utf8) else {
+            return nil
+        }
+        
+        let tokenComponents = tokenString.components(separatedBy: ",")
+        
+        guard tokenComponents.count > 2 else {
+            return nil
+        }
+        
+        guard tokenComponents.first == "mision" else {
+            return nil
+        }
+        
+        return tokenComponents[1]
     }
     
     var toInt: Int? {

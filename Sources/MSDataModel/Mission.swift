@@ -9,14 +9,22 @@
 import MongoDBStORM
 import StORM
 
+enum MissionStatus: Int {
+    case open
+    case inProcess
+    case done
+    case aborted
+}
+
 public class Mission: MongoDBStORM {
     
     var id: String = ""
     var title: String = ""
     var description: String = ""
-    var status: Int = 0
+    var status: Int = MissionStatus.open.rawValue
     var price: Double = 0.0
     var author_id: String = ""
+    var accepter_id: String = ""
     var address: String = ""
     var post_date: String = ""
     var due_date: String = ""
@@ -29,12 +37,13 @@ public class Mission: MongoDBStORM {
     }
     
     public override func to(_ this: StORMRow) {
-        id          = this.data["id"] as? String ?? ""
+        id          = this.data["_id"] as? String ?? ""
         title       = this.data["title"] as? String ?? ""
         description = this.data["description"] as? String ?? ""
-        status      = this.data["status"] as? Int ?? 0
+        status      = this.data["status"] as? Int ?? MissionStatus.open.rawValue
         price       = this.data["price"] as? Double ?? 0.0
         author_id   = this.data["author_id"] as? String ?? ""
+        accepter_id = this.data["accepter_id"] as? String ?? ""
         address     = this.data["address"] as? String ?? ""
         post_date   = this.data["post_date"] as? String ?? ""
         due_date    = this.data["due_date"] as? String ?? ""

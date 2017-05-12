@@ -31,13 +31,13 @@ public struct RoutingProfile: RoutesBuilder {
     
     
     func getProfileHandler(request: HTTPRequest, response: HTTPResponse) {
-        guard let token = request.token?.decodedString else {
+        guard let userID = request.token?.toUserID else {
             
             response.accessDenied()
             return
         }
         
-        if let profile = findUserBy(decodedToken: token)?.asDataDict() {
+        if let profile = UserFactory.findUserBy(id: userID)?.asDataDict() {
             response.sendJSONBodyWithSuccess(json: ["user": profile])
         } else {
             response.notFound()
@@ -46,13 +46,13 @@ public struct RoutingProfile: RoutesBuilder {
     
     func getBasicProfileHandler(request: HTTPRequest, response: HTTPResponse) {
         
-        guard let token = request.token?.decodedString else {
+        guard let userID = request.token?.toUserID else {
             
             response.accessDenied()
             return
         }
         
-        if let profile = findUserBy(decodedToken: token)?.asDataDict() {
+        if let profile = UserFactory.findUserBy(id: userID)?.asDataDict() {
             
             var basicProfile = [String: Any]()
                 
@@ -69,13 +69,13 @@ public struct RoutingProfile: RoutesBuilder {
     }
     
     func getPreviewProfileHandler(request: HTTPRequest, response: HTTPResponse) {
-        guard let token = request.token?.decodedString else {
+        guard let userID = request.token?.toUserID else {
             
             response.accessDenied()
             return
         }
         
-        if let profile = findUserBy(decodedToken: token)?.asDataDict() {
+        if let profile = UserFactory.findUserBy(id: userID)?.asDataDict() {
             
             var previewProfile = [String: Any]()
             
@@ -113,7 +113,7 @@ public struct RoutingProfile: RoutesBuilder {
     }
     
     func profilePostHandler(request: HTTPRequest, response: HTTPResponse) {
-        guard let token = request.token?.decodedString else {
+        guard let userID = request.token?.toUserID else {
             
             response.accessDenied()
             return
@@ -129,47 +129,13 @@ public struct RoutingProfile: RoutesBuilder {
             return
         }
             
-        guard let _ = updateUser(decodedToken: token, profile: update) else {
+        guard let _ = UserFactory.update(userID: userID, with: update) else {
             response.internalError()
             
             return
         }
         
         response.sendJSONBodyWithSuccess(json: nil)
-    }
-    
-    private func findUserBy(decodedToken: String) -> User? {
-        
-        guard let userID = userIDFrom(decodedToken: decodedToken) else {
-            return nil
-        }
-        
-        return UserFactory.findUserBy(id: userID)
-    }
-    
-    private func updateUser(decodedToken: String, profile: [String: Any]) -> User? {
-        
-        guard let userID = userIDFrom(decodedToken: decodedToken) else {
-            return nil
-        }
-        
-        return UserFactory.update(userID: userID, with: profile)
-    }
-    
-    private func userIDFrom(decodedToken: String) -> String? {
-        let tokenComponents = decodedToken.components(separatedBy: ",")
-        
-        guard tokenComponents.count > 2 else {
-            LogFile.error("Token parsing error!")
-            return nil
-        }
-        
-        guard tokenComponents.first == "mision" else {
-            LogFile.error("Token format error!")
-            return nil
-        }
-        
-        return tokenComponents[1]
     }
     
     //MARK: mock data

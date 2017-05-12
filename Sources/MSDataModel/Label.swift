@@ -20,7 +20,7 @@ class Label: MongoDBStORM {
     }
     
     override func to(_ this: StORMRow) {
-        id      = this.data["id"] as? String ?? ""
+        id      = this.data["_id"] as? String ?? ""
         label   = this.data["label"] as? String
     }
 }

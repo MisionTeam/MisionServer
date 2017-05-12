@@ -54,7 +54,7 @@ extension HTTPResponse {
         }
     }
     
-    func sendJSONBodyWithSuccess(json: [String: Any]?) {
+    func sendJSONBodyWithSuccess(json: [String: Any]? = nil) {
         var success: [String: Any] = ["success": true, "status": 200]
         
         if let body = json {

@@ -147,20 +147,25 @@ enum MissionEndpoint: Endpoint {
     
     static var baseURL: String = "/mission"
     
-    static var allEndpoints: [MissionEndpoint] = [.list, .detail]
+    static var allEndpoints: [MissionEndpoint] = [.list, .detail, .create]
     
     case list
     case detail
+    case create
     
     var route: String {
         switch self {
         case .list: return "/list"
         case .detail: return "/detail"
+        case .create: return "/create"
         }
     }
     
     var method: HTTPMethod {
-        return .get
+        switch self {
+        case .create: return .post
+        default: return .get
+        }
     }
     
     static let title: String = "Mission"
@@ -191,6 +196,21 @@ enum MissionEndpoint: Endpoint {
             
             "response"  : [["param": "mission"],
                            ["param": "success"],
+                           ["param": "status"],
+                           ["param": "error"]]
+        ],
+        [
+            "route"     : MissionEndpoint.baseURL + MissionEndpoint.create.route,
+            "method"    : MissionEndpoint.create.method.description,
+            
+            "request"   : [["param": "title"],
+                           ["param": "description"],
+                           ["param": "price"],
+                           ["param": "address"],
+                           ["param": "post_date"],
+                           ["param": "due_date"]],
+            
+            "response"  : [["param": "success"],
                            ["param": "status"],
                            ["param": "error"]]
         ]

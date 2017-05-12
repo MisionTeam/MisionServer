@@ -48,7 +48,7 @@ public class User: MongoDBStORM {
     }
     
     override public func to(_ this: StORMRow) {
-        id          = this.data["id"] as? String ?? ""
+        id          = this.data["_id"] as? String ?? ""
         facebook_id = this.data["facebook_id"] as? String ?? ""
         first_name  = this.data["first_name"] as? String ?? ""
         last_name   = this.data["last_name"] as? String ?? ""
