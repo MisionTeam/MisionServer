@@ -323,8 +323,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "OBJ_2079"
-               BuildableName = "Server"
-               BlueprintName = "Server"
+               BuildableName = "MisionServer"
+               BlueprintName = "MisionServer"
                ReferencedContainer = "container:MisionServer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

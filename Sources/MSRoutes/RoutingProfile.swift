@@ -119,15 +119,8 @@ public struct RoutingProfile: RoutesBuilder {
             return
         }
         
-        guard let updateString = request.param(name: "user") else {
-            response.missing(field: "user")
-            return
-        }
-        
-        guard let update = (try? updateString.jsonDecode()) as? [String: Any] else {
-            response.decodeError()
-            return
-        }
+        var update = [String: Any]()
+        request.params().forEach { update[$0.0] = $0.1 }
             
         guard let _ = UserFactory.update(userID: userID, with: update) else {
             response.internalError()
