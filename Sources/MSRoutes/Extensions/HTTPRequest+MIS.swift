@@ -12,8 +12,13 @@ extension HTTPRequest {
     
     var token: String? {
         
-        guard let token = header(.authorization), !token.isEmpty else {
-            return nil
+        var token: String?
+        
+        for (key, value) in queryParams {
+            if key == "token" {
+                token = value
+                break
+            }
         }
         
         return token
